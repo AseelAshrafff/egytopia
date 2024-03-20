@@ -1,0 +1,55 @@
+.nav-link {
+    position: relative;
+    text-decoration: none;
+  }
+  .nav-link::after {
+    content: ''; /* إنشاء محتوى فارغ */
+    position: absolute;
+    width: 6px; /* عرض النقطة */
+    height: 6px; /* ارتفاع النقطة */
+    margin-bottom: 5px;
+    background-color: #C89666; /* لون النقطة */
+    border-radius: 50%; /* لجعل النقطة دائرية */
+    bottom: -4px; /* موضع النقطة تحت الرابط */
+    left: 50%; /* تحديد الموضع أفقيًا في منتصف الرابط */
+    transform: translateX(-50%); /* توسيط النقطة أفقيًا */
+    transition: background-color 0.3s ease; /* تأثير انتقالي لتغيير لون النقطة */
+    opacity: 0; /* إخفاء النقطة بشكل افتراضي */
+  }
+  .nav-link:focus::after {
+    opacity: 1; /* إظهار النقطة عند التركيز */
+  }
+  .nav-link:hover,
+  .nav-link:focus{
+    color: #C89666;
+  }
+  .nav-item{
+    display: block;
+    margin-right:20px;
+  }
+  .navbar-nav{
+    margin-right: 80px;
+  }
+  .avatar{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-top: 10px;
+  }
+  .name{
+    margin-top: 7px; 
+  }
+  .profile{
+    width:30;
+    display: flex;
+  }
+  .menu{
+    border-radius: 24px;
+    width: 64px;
+    height: 40px;
+    background-color: #2D545E;
+    text-align: center;
+    color: #FFFFFF;
+    margin-right: 20px;
+  }
