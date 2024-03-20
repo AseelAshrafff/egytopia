@@ -40,7 +40,11 @@
               "src/styles.css"
             ],
             "scripts": [
+<<<<<<< HEAD
               "node_modules/bootstrap/dist/js/bootstrap.js"
+=======
+              "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
+>>>>>>> e9b503b1930c472d4eb3347c2a0ea1e3f0c678ff
             ]
           },
           "configurations": {
