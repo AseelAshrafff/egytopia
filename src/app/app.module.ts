@@ -17,7 +17,8 @@ import { FavoritesComponent } from './page/user/favorites/favorites.component';
 import { ProfileComponent } from './page/user/profile/profile.component';
 import { NotificationsComponent } from './page/user/notifications/notifications.component';
 import { FiltersComponent } from './page/home/filters/filters.component';
-import { CardsComponent } from './pag/home/cards/cards.component';
+import { CardsComponent } from './page/home/cards/cards.component';
+
 
 
 @NgModule({
@@ -36,7 +37,8 @@ import { CardsComponent } from './pag/home/cards/cards.component';
     ProfileComponent,
     NotificationsComponent,
     FiltersComponent,
-    CardsComponent
+    CardsComponent,
+  
   ],
   imports: [
     BrowserModule,

@@ -1,5 +1,6 @@
 .filters{
     display: flex;
+    position: relative;
    }
    .filters h6{
      font-weight: bold;
@@ -10,80 +11,94 @@
      border: none ;
      color: black;
      font-weight: bold;
+     display: flex;
    }
    .filter1{
-     margin-left: 35px;
-     width: 84px;
-     height: 48px;
+     position: absolute;
+     left:50px;
+     width: 74px;
+     height: 40px;
    }
    .filter2{
-    margin-left: 100px; 
-    width: 139px;
-    height: 48px;
+    position: absolute;
+    left: 300px; 
+    width: 120px;
+    height: 40px;
+    
    }
    .filter3{
-     margin-left: 200px;
-     width: 235px;
-     height: 48px;
+     position: absolute;
+     left: 600px;
+     width: 200px;
+     height: 40px;
    }
    .filter4{
-     width: 229px;
-     height: 48px;
+    position: absolute;
+    left: 1000px;
+     width: 200px;
+     height: 40px;
    }
    button:focus{
      background-color: #E7B88A;
-   }
-   .filter5{
-     background-color: #E7B88A;
-     width: 128px;
-     height: 48px;
-     border-radius: 16px;
-     border: none ;
-     margin-left: 150px;
      color: #FFFFFF;
    }
- .filter5 img{
-   margin-right: 10px;
- }
- .circle{
-   background-color: #E7B88A;
-   width: 48px;
-   height: 48px;
-   border-radius:50%;
- }
- .filterdiv{
-   display: flex;
-   position: absolute;
-   top: 100px;
-   right: 1210px; 
- }
- .text{
- margin-top:10px;
- margin-left:15px;
- }
- .filterdiv1{
-   display: flex;
-   position: absolute;
-   top: 100px;
-   right: 795px;  
- }
- .text1{
-  margin-top: 12px;  
-  margin-left:17px;
- }
- .filterdiv2{
-   display: flex;
-   position: absolute;
-   top: 100px;
-   right: 363px; 
- }
- .text2{
-   margin-top: 12px;  
-   margin-left:20px;
+   .filter5{
+    background-color: #E7B88A;
+    width: 110px;
+    height: 40px;
+    border-radius: 16px;
+    border: none ;
+    position: absolute;
+    left:1350px ;
+    color: #FFFFFF;
   }
-  .filter1 h6{
-   margin-top:5px;
+  .circle{
+    background-color: #E7B88A;
+    width: 38px;
+    height: 38px;
+    border-radius:50%;
+    position: relative;
+    right:5px;
+  }
+  .filterdiv{
+    display: flex;
+  }
+  .filterdiv1{
+    display: flex;
+  }
+  .filterdiv2{
+    display: flex; 
+  }
+  .filter5 img{
+    margin-right: 10px;
   }
   .circle img{
-   margin-top: 10px;
-  }
+    margin-top: 5px;
+   }
+   .text{
+    margin-top:6px;
+    margin-left:7px;
+    }
+    .text1{
+      margin-top: 6px;  
+      margin-left:11px;
+     }
+     .text2{
+      margin-top: 6px;  
+      margin-left:11px;
+     }
+     
+    .filter1 h6{
+     margin-top:7px;
+     margin-left:20px;
+     }
+   
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
