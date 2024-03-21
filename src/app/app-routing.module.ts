@@ -12,7 +12,7 @@ import { FreelanceComponent } from './page/freelancepages/freelance/freelance.co
 import { FavoritesComponent } from './page/user/favorites/favorites.component';
 import { NotificationsComponent } from './page/user/notifications/notifications.component';
 import { ProfileComponent } from './page/user/profile/profile.component';
-
+import {HotelsCardsComponent}from './hotels-cards/hotels-cards.component'
 
 const routes: Routes = [
   {path:'', redirectTo:'home', pathMatch:'full'},
@@ -20,13 +20,14 @@ const routes: Routes = [
   {path:'login', component:LoginComponent},
   {path:'register', component:RegisterComponent},
   {path:'navbar', component:NavbarComponent},
-  {path:'hotels/:id', component:HotelsComponent},
+  {path:'hotels/id', component:HotelsComponent},
   {path:'hoteldetails/:id', component:HoteldetailsComponent},
   {path:'experience', component:ExperienceComponent},
   {path:'freelance', component:FreelanceComponent},
   {path:'favorite', component:FavoritesComponent},
   {path:'notification', component:NotificationsComponent},
   {path:'profile', component:ProfileComponent},
+  {path:'hotels-cards', component:HotelsCardsComponent},
   {path:'**', component:NotfoundComponent}
   
 ];

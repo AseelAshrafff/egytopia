@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+.cardcontainer{
+    display: flex;
+    justify-content: center;
+    
+}
+.card {
+    width: 316px;
+    height: 432px;
+    top: 1053px;
+    left: 388px;
+    gap: 0px;
+    border-radius: 24px 0px 0px 0px;
+    border: 1px 0px 0px 0px;
+    opacity: 0px;
+    background-color: #FFFFFF;
+    box-shadow: 4px 15px 64px 0px #A9CEF438;
+
+
+}
+
+.card-Image-Top{
+    width: 300px;
+    height: 248px;
+    top: 8px;
+    left: 8px;
+    gap: 0px;
+    border-radius: 16px 0px 0px 0px;
+    opacity: 0px;
+
+}
+
+.hotelsDesc {
+    width: 226px;
+    height: 44px;
+    top: 272px;
+    left: 8px;
+    gap: 0px;
+    opacity: 0px;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    text-align: left;
+    background: #181818;
+    box-shadow: 0px 5px 13px 0px #FFFFFF66;
+}
+
+.wifiIcon {
+    width: 15.08px;
+    height: 12px;
+    top: 2px;
+    left: 0.46px;
+    gap: 0px;
+    opacity: 0px;
+
+}
+
+.wifiText {
+    width: 29px;
+    height: 17px;
+    left: 24px;
+    gap: 0px;
+    opacity: 0px;
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16.94px;
+    text-align: left;
+    background: #767681;
+
+
+}
+
+.Transporticon {
+    width: 19.6px;
+    height: 14px;
+    top: 353px;
+    left: 8px;
+    gap: 0px;
+    opacity: 0px;
+    background: #5CC1DA;
+
+}
+
+.transporContent {
+    width: 116px;
+    height: 17px;
+    top: 351px;
+    left: 33px;
+    gap: 0px;
+    opacity: 0px;
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16.94px;
+    text-align: left;
+    background: rgba(118, 118, 129, 1);
+
+
+}
+
+.familyicon {
+    width: 19.09px;
+    height: 14px;
+    top: 380px;
+    left: 8px;
+    gap: 0px;
+    opacity: 0px;
+    background: #5CC1DA;
+
+}
+
+.familyPlanContent {
+    width: 75px;
+    height: 17px;
+    top: 378px;
+    left: 32px;
+    gap: 0px;
+    opacity: 0px;
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16.94px;
+    text-align: left;
+    background: rgba(118, 118, 129, 1);
+
+
+}
