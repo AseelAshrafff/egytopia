@@ -1,36 +1,32 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-
-
-
-.cardcontainer{
-    display: flex;
-    justify-content: center;
-    
+.container {
+    display:  flex;
+    flex-wrap:wrap;
+    justify-content:center;
+   gap: 40px;
 }
+
 .card {
-    width: 316px;
-    height: 432px;
+    width: 400px;
+    height: 495px;
     top: 1053px;
-    left: 388px;
+    left: 40px;
     gap: 0px;
-    border-radius: 24px 0px 0px 0px;
-    border: 1px 0px 0px 0px;
+    border-radius: 24px;
+    border: 1;
     opacity: 0px;
-    background-color: #FFFFFF;
-    box-shadow: 4px 15px 64px 0px #A9CEF438;
-
+    border: 1px solid rgba(239, 239, 239, 1);
+    box-shadow: 4px 15px 64px 0px rgba(169, 206, 244, 0.22);
 
 }
 
-.card-Image-Top{
-    width: 300px;
-    height: 248px;
-    top: 8px;
-    left: 8px;
-    gap: 0px;
-    border-radius: 16px 0px 0px 0px;
+.card img {
+    width: 270px;
+    height: 220px;
+    margin-top: 10px;
+    margin-left: 9px;
+    border-radius: 16px;
     opacity: 0px;
-
+    gap: 0px;
 }
 
 .hotelsDesc {
@@ -40,7 +36,7 @@
     left: 8px;
     gap: 0px;
     opacity: 0px;
-    font-family: Inter;
+    font-family:' Inter';
     font-size: 16px;
     font-weight: 400;
     line-height: 22px;
@@ -49,13 +45,20 @@
     box-shadow: 0px 5px 13px 0px #FFFFFF66;
 }
 
+.icon-text-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
 .wifiIcon {
     width: 15.08px;
     height: 12px;
-    top: 2px;
+    top: 3px;
     left: 0.46px;
     gap: 0px;
     opacity: 0px;
+    color: #5CC1DA;
 
 }
 
@@ -70,7 +73,7 @@
     font-weight: 400;
     line-height: 16.94px;
     text-align: left;
-    background: #767681;
+    color: #767681;
 
 
 }
@@ -82,7 +85,7 @@
     left: 8px;
     gap: 0px;
     opacity: 0px;
-    background: #5CC1DA;
+    color: #5CC1DA;
 
 }
 
@@ -98,7 +101,7 @@
     font-weight: 400;
     line-height: 16.94px;
     text-align: left;
-    background: rgba(118, 118, 129, 1);
+    color: rgba(118, 118, 129, 1);
 
 
 }
@@ -110,7 +113,7 @@
     left: 8px;
     gap: 0px;
     opacity: 0px;
-    background: #5CC1DA;
+    color: #5CC1DA;
 
 }
 
@@ -126,7 +129,7 @@
     font-weight: 400;
     line-height: 16.94px;
     text-align: left;
-    background: rgba(118, 118, 129, 1);
+    color: rgba(118, 118, 129, 1);
 
 
 }
