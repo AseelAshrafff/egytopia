@@ -17,6 +17,7 @@ import { NotificationsComponent } from './page/user/notifications/notifications.
 import { FiltersComponent } from './page/home/filters/filters.component';
 import { CardsComponent } from './page/home/cards/cards.component';
 import { HotelsCardsComponent } from './hotels-cards/hotels-cards.component';
+import { UpperHotelComponent } from './upper-hotel/upper-hotel.component';
 
 
 
@@ -38,6 +39,7 @@ import { HotelsCardsComponent } from './hotels-cards/hotels-cards.component';
     FiltersComponent,
     CardsComponent,
     HotelsCardsComponent,
+    UpperHotelComponent,
   
   ],
   imports: [

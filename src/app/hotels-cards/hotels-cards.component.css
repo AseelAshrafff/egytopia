@@ -1,18 +1,20 @@
 .container {
-    display:  flex;
-    flex-wrap:wrap;
-    justify-content:center;
-   gap: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    width: 2850px;
+    margin-left: 6px;
+    
 }
 
 .card {
-    width: 400px;
+    width: 300px;
     height: 495px;
-    top: 1053px;
-    left: 40px;
-    gap: 0px;
+    /* top: 1053px;
+    left: 40px; */
+    /* gap: 0px; */
     border-radius: 24px;
-    border: 1;
+    border: 1px;
     opacity: 0px;
     border: 1px solid rgba(239, 239, 239, 1);
     box-shadow: 4px 15px 64px 0px rgba(169, 206, 244, 0.22);
@@ -36,7 +38,7 @@
     left: 8px;
     gap: 0px;
     opacity: 0px;
-    font-family:' Inter';
+    font-family: ' Inter';
     font-size: 16px;
     font-weight: 400;
     line-height: 22px;
@@ -130,6 +132,7 @@
     line-height: 16.94px;
     text-align: left;
     color: rgba(118, 118, 129, 1);
-
-
+}
+h2{
+    margin-left: 25px;
 }
