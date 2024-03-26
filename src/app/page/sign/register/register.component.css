@@ -12,11 +12,13 @@
   background-size: cover;
   background-position: right;
   padding: 100px 0;
+  
 }
 
 @media (min-width: 991px) {
   .ezy__signup14 {
-    padding: 100px 0;
+    padding: 50px 0;
+    
   }
 }
 
@@ -64,7 +66,6 @@
   background-color: transparent;
   color: var(--bs-body-color);
   border-radius: 8px;
-  
   font-size: 14px;
 }
 
@@ -91,9 +92,9 @@
   text-decoration: underline;
   color: var(--ezy-theme-color);
 }
- .ezy__signup14-form-card .row {
+ /* .ezy__signup14-form-card .row {
     flex-direction: row-reverse; 
-  }
+  } */
 
  .image-letter::after {
   content: ""; 
@@ -104,4 +105,10 @@
   background-size: cover;
   background-position: top;
   
+}
+.form-label{
+  margin-right: 122px;
+}
+.form-label1{
+  margin-right: 89%;
 }
