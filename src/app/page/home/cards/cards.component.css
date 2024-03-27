@@ -46,9 +46,6 @@ xl — screen width ≥ 1200px */
         left: 60px;
         top:35px;
     }
-
-<<<<<<< HEAD
-=======
 .cardcontainer{
  display: flex;   
  justify-content: center;
@@ -89,4 +86,3 @@ box-shadow: 10px 10px 10px 10px #A9CEF438;
     top:35px;
 }
 
->>>>>>> 68bb2953971b118ba1800e489145183069c896ba

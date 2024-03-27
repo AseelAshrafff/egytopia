@@ -71,7 +71,7 @@ p {
 h2 {
     margin-left: 25px;
 }
-
+/* 
 width: 113px;
 height: 29px;
 top: 687px;
@@ -88,7 +88,7 @@ color: rgba(24, 24, 24, 1);
 
 }
 
-*/ .subInfo {
+*/ .subInfo { 
     width: Fixed (437px)px;
     height: Hug (100px)px;
     margin-left: 50px;
