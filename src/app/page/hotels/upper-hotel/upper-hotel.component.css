@@ -78,14 +78,13 @@ h2 {
 }
 
 .subInfo {
-    width: Fixed (437px)px;
+    margin-left: 25px;   width: Fixed (437px)px;
     height: Hug (100px)px;
     gap: 12px;
     opacity: 0px;
     justify-content: left;
-    margin-left: 10px;
-
 }
+
 
 .Location {
 

@@ -1,3 +1,11 @@
+/* 
+(xs) — screen width < 576px (This is the “default” tier)
+sm — screen width ≥ 576px
+md — screen width ≥ 768px
+lg — screen width ≥ 992px
+xl — screen width ≥ 1200px */
+
+
 @import url('https://fonts.googleapis.com/css2?family=Inter&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 .cardcontainer {
@@ -44,3 +52,4 @@
     left: 60px;
     top: 35px;
 }
+

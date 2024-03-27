@@ -33,11 +33,24 @@ h3 {
     margin-bottom: 30px;
     margin-right: 10px;
 
+    
+}
+
+.card {
+    width: 300px;
+    height: 495px;
+
+    border-radius: 24px;
+    border: 1px;
+    opacity: 0px;
+    border: 1px solid rgba(239, 239, 239, 1);
+    box-shadow: 4px 15px 64px 0px rgba(169, 206, 244, 0.22);
+
 }
 
 .card img {
     width: 270px;
-    height: 200px;
+    height: 220px;
     margin-top: 10px;
     margin-left: 9px;
     border-radius: 16px;
@@ -46,8 +59,7 @@ h3 {
 }
 
 .card-title {
-    width: 226px;
-    height: 44px;
+
     gap: 0px;
     opacity: 0px;
     font-family: ' Inter';
@@ -56,6 +68,20 @@ h3 {
     line-height: 22px;
     text-align: left;
     color: #181818;
+}
+.hotelsDesc {
+    width: 226px;
+    height: 44px;
+    top: 272px;
+    left: 8px;
+    gap: 0px;
+    opacity: 0px;
+    font-family: ' Inter';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    text-align: left;
+    background: #181818;
     box-shadow: 0px 5px 13px 0px #FFFFFF66;
 }
 
@@ -83,4 +109,11 @@ h3 {
     line-height: 16.94px;
     text-align: left;
     color: rgba(118, 118, 129, 1);
+
+
+}
+
+h2{
+    margin-left: 25px;
+
 }

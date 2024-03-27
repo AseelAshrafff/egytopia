@@ -54,3 +54,18 @@
     color: #FFFFFF;
     margin-right: 20px;
   }
+ .nav-item input{
+  border-radius: 15px;
+  border-color: #C89666;
+  margin-top: 5px;
+  width: 200px;
+  transition: border-color 0.3s;
+  color: #C89666;
+  }
+    .search{
+    margin-left: 15px;
+    margin-top: 2px;
+    }
+    .fav{
+      margin-top: 13px;
+    }

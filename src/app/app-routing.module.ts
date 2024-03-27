@@ -12,16 +12,17 @@ import { FreelanceComponent } from './page/freelancepages/freelance/freelance.co
 import { FavoritesComponent } from './page/user/favorites/favorites.component';
 import { NotificationsComponent } from './page/user/notifications/notifications.component';
 import { ProfileComponent } from './page/user/profile/profile.component';
-import {HotelsCardsComponent}from './page/hotels/hotels-cards/hotels-cards.component';
 import {UpperHotelComponent} from './page/hotels/upper-hotel/upper-hotel.component';
+import {HotelsCardsComponent}from './page/hotels/hotels-cards/hotels-cards.component'
+
 const routes: Routes = [
   {path:'', redirectTo:'home', pathMatch:'full'},
   {path:'home', component:HomeComponent},
   {path:'login', component:LoginComponent},
   {path:'register', component:RegisterComponent},
   {path:'navbar', component:NavbarComponent},
-  {path:'hotels/id', component:HotelsComponent},
-  {path:'hoteldetails/:id', component:HoteldetailsComponent},
+  {path:'hotel',component:HotelsComponent},
+  {path:'hoteldetails', component:HoteldetailsComponent},
   {path:'experience', component:ExperienceComponent},
   {path:'freelance', component:FreelanceComponent},
   {path:'favorite', component:FavoritesComponent},
@@ -30,7 +31,6 @@ const routes: Routes = [
   {path:'hotels-cards', component:HotelsCardsComponent},
   {path:'upper-hotel', component: UpperHotelComponent },
   {path:'**', component:NotfoundComponent}
-  
 ];
 
 @NgModule({
