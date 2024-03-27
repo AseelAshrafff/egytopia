@@ -16,8 +16,8 @@ import { ProfileComponent } from './page/user/profile/profile.component';
 import { NotificationsComponent } from './page/user/notifications/notifications.component';
 import { FiltersComponent } from './page/home/filters/filters.component';
 import { CardsComponent } from './page/home/cards/cards.component';
-import { HotelsCardsComponent } from './hotels-cards/hotels-cards.component';
-import { UpperHotelComponent } from './upper-hotel/upper-hotel.component';
+import { HotelsCardsComponent } from './page/hotels/hotels-cards/hotels-cards.component';
+import { UpperHotelComponent } from './page/hotels/upper-hotel/upper-hotel.component';
 import { ReactiveFormsModule } from '@angular/forms';
 
 
@@ -41,7 +41,7 @@ import { ReactiveFormsModule } from '@angular/forms';
     CardsComponent,
     HotelsCardsComponent,
     UpperHotelComponent,
-  
+
   ],
   imports: [
     BrowserModule,

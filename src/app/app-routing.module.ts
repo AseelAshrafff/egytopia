@@ -12,8 +12,8 @@ import { FreelanceComponent } from './page/freelancepages/freelance/freelance.co
 import { FavoritesComponent } from './page/user/favorites/favorites.component';
 import { NotificationsComponent } from './page/user/notifications/notifications.component';
 import { ProfileComponent } from './page/user/profile/profile.component';
-import {HotelsCardsComponent}from './hotels-cards/hotels-cards.component'
-
+import {HotelsCardsComponent}from './page/hotels/hotels-cards/hotels-cards.component';
+import {UpperHotelComponent} from './page/hotels/upper-hotel/upper-hotel.component';
 const routes: Routes = [
   {path:'', redirectTo:'home', pathMatch:'full'},
   {path:'home', component:HomeComponent},
@@ -28,6 +28,7 @@ const routes: Routes = [
   {path:'notification', component:NotificationsComponent},
   {path:'profile', component:ProfileComponent},
   {path:'hotels-cards', component:HotelsCardsComponent},
+  {path:'upper-hotel', component: UpperHotelComponent },
   {path:'**', component:NotfoundComponent}
   
 ];
