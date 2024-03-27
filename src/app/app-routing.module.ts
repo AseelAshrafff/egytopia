@@ -20,15 +20,14 @@ const routes: Routes = [
   {path:'login', component:LoginComponent},
   {path:'register', component:RegisterComponent},
   {path:'navbar', component:NavbarComponent},
-  {path:'hotels/:id', component:HotelsComponent},
-  {path:'hoteldetails/:id', component:HoteldetailsComponent},
+  {path:'hotel',component:HotelsComponent},
+  {path:'hoteldetails', component:HoteldetailsComponent},
   {path:'experience', component:ExperienceComponent},
   {path:'freelance', component:FreelanceComponent},
   {path:'favorite', component:FavoritesComponent},
   {path:'notification', component:NotificationsComponent},
   {path:'profile', component:ProfileComponent},
   {path:'**', component:NotfoundComponent}
-  
 ];
 
 @NgModule({

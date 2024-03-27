@@ -3,6 +3,9 @@
       <div class="logo ms-20" routerLink="home">
         <img src="/assets/images/logo image.png" alt="icon">
       </div>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
       <div class="collapse navbar-collapse hoveritems" id="navbarSupportedContent">
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
           <li class="nav-item me-5 m-t-">
@@ -19,13 +22,21 @@
 
         <ul class="navbar-nav ms-70 mb-2 ">
           <li class="nav-item">
-            <a class="nav-link" routerLink="search"><img src="/assets/images/search.jpg" alt="notification"></a>
+            <a class="nav-link" routerLink="search">
+             
+              <input type="text" id="searchField">
+              <img class="search" src="/assets/images/search.jpg" alt="searchicon" onclick="toggleSearchField()">
+            </a>
+           
+              
+            
+           
           </li>
-          <li class="nav-item">
+          <!-- <li class="nav-item">
             <a class="nav-link" routerLink="notification"><img src="/assets/images/notification.jpg" alt="notification"></a>
-          </li>
+          </li> -->
           <li class="nav-item">
-            <a class="nav-link" routerLink="favorite"><img src="/assets/images/favorites.png" alt="notification"></a>
+            <a class="nav-link" routerLink="favorite"><img class="fav" src="/assets/images/favorites.png" alt="favorites"></a>
           </li>
           <div class="profile">
                 <img class="avatar" src="/assets/images/me.jpg" alt="profile">
@@ -44,4 +55,5 @@
         </div>
       </div>
     </div>
+ 
   </nav>
