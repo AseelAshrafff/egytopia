@@ -1,9 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-
 import { HotelsComponent } from './page/hotels/hotels/hotels.component';
 import { HoteldetailsComponent } from './page/hotels/hoteldetails/hoteldetails.component';
 import { LoginComponent } from './page/sign/login/login.component';
@@ -18,7 +16,13 @@ import { ProfileComponent } from './page/user/profile/profile.component';
 import { NotificationsComponent } from './page/user/notifications/notifications.component';
 import { FiltersComponent } from './page/home/filters/filters.component';
 import { CardsComponent } from './page/home/cards/cards.component';
+<<<<<<< HEAD
 import { HttpClientModule } from '@angular/common/http';
+=======
+import { HotelsCardsComponent } from './hotels-cards/hotels-cards.component';
+import { UpperHotelComponent } from './upper-hotel/upper-hotel.component';
+import { ReactiveFormsModule } from '@angular/forms';
+>>>>>>> 68bb2953971b118ba1800e489145183069c896ba
 
 
 
@@ -39,12 +43,18 @@ import { HttpClientModule } from '@angular/common/http';
     NotificationsComponent,
     FiltersComponent,
     CardsComponent,
+    HotelsCardsComponent,
+    UpperHotelComponent,
   
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+<<<<<<< HEAD
     HttpClientModule
+=======
+    ReactiveFormsModule
+>>>>>>> 68bb2953971b118ba1800e489145183069c896ba
   ],
   providers: [],
   bootstrap: [AppComponent]
