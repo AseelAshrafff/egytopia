@@ -17,12 +17,12 @@ import { NotificationsComponent } from './page/user/notifications/notifications.
 import { FiltersComponent } from './page/home/filters/filters.component';
 import { CardsComponent } from './page/home/cards/cards.component';
 import { HttpClientModule } from '@angular/common/http';
-import { UpperHotelComponent } from './upper-hotel/upper-hotel.component';
+import { UpperHotelComponent } from './page/hotels/upper-hotel/upper-hotel.component';
 import { HotelsCardsComponent } from './page/hotels/hotels-cards/hotels-cards.component';
 import { ReactiveFormsModule } from '@angular/forms';
-
-
-
+import { CoastalplacesComponent } from './page/coastalplaces/coastalplaces.component';
+import { ToursticplacesComponent } from './page/toursticplaces/toursticplaces.component';
+import { TourguideComponent } from './page/freelancepages/tourguide/tourguide.component';
 
 @NgModule({
   declarations: [
@@ -43,6 +43,9 @@ import { ReactiveFormsModule } from '@angular/forms';
     CardsComponent,
     UpperHotelComponent,
     HotelsCardsComponent,
+    CoastalplacesComponent,
+    ToursticplacesComponent,
+   TourguideComponent
     
   
   ],
