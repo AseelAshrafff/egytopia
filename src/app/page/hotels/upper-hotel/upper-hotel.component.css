@@ -1,3 +1,7 @@
+.container {
+    justify-content: center;
+}
+<!----------------gride container------------------------------>
 .grid-container {
     margin-top: 50px;
     display: grid;
@@ -5,8 +9,13 @@
     grid-gap: 10px;
     margin-left: 20px;
     margin-bottom: 25px;
+    margin-top: 35px;
+    margin-left: 35px;
+    margin-right: 35px;
+    justify-content: center;
+    align-items: center;
 }
-
+<!---------- grid item---------------------->
 .grid-item {
     width: auto;
     height: 200px;
@@ -15,21 +24,22 @@
 
 .grid-item-1 {
     grid-column: span 6;
-    width: 540px;
+    width: 550px;
     height: 373px;
-    top: 120px;
-    left: 40px;
     gap: 0px;
+    margin-left: 5px;
+    margin-right: 5px;
+
     border-radius: 16px;
     opacity: 0px;
 }
 
 .grid-item-2 {
     grid-column: span 3;
-    width: 330px;
+    width: 347px;
     height: 376px;
-    top: 120px;
-    left: 716px;
+    margin-left: 5px;
+    margin-right: 5px;
     gap: 0px;
     border-radius: 16px;
     opacity: 0px;
@@ -40,10 +50,11 @@
 .grid-item-4 {
     grid-column: span 3;
     height: 100px;
-    width: 320px;
+    width: 290px;
     height: 180px;
     margin-bottom: 10px;
-    margin-left: 6px;
+    margin-left: 5px;
+    margin-right: 5px;
     gap: 0px;
     border-radius: 16px;
     opacity: 0px;
@@ -51,56 +62,32 @@
     /* Half the height of the first two images */
 }
 
-p {
-    width: 740px;
-    height: 172px;
-    top: 732px;
-    margin-left: 25px;
-    gap: 0px;
-    opacity: 0px;
-    font-family: Inter;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 24px;
-    letter-spacing: 0.02em;
-    text-align: left;
-    color: rgba(79, 79, 79, 1);
-
-}
 
 h2 {
-    margin-left: 25px;
-}
-/* 
-width: 113px;
-height: 29px;
-top: 687px;
-left: 40px;
-gap: 0px;
-opacity: 0px;
-font-family: Inter;
-font-size: 24px;
-font-weight: 600;
-line-height: 29.05px;
-letter-spacing: 0.01em;
-text-align: left;
-color: rgba(24, 24, 24, 1);
+    margin-top: 10px;
+    margin-left: 5px;
+    opacity: 0px;
+    font-family: 'Inter';
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 29.05px;
+    letter-spacing: 0.01em;
+    text-align: left;
+    color: rgba(24, 24, 24, 1);
 
 }
 
-*/ .subInfo { 
-    width: Fixed (437px)px;
+.subInfo {
+    margin-left: 25px;   width: Fixed (437px)px;
     height: Hug (100px)px;
-    margin-left: 50px;
-    margin-bottom:150px ;
     gap: 12px;
     opacity: 0px;
-
+    justify-content: left;
 }
 
+
 .Location {
-    width: 384px;
-    height: 17px;
+
     gap: 0px;
     opacity: 0px;
     font-family: Inter;
@@ -114,21 +101,30 @@ color: rgba(24, 24, 24, 1);
 }
 
 .locIcon {
-    width: 18px;
-    height: 21.73px;
-    top: 2px;
-    left: 3px;
+    margin-right: 10px;
     gap: 0px;
     opacity: 0px;
     color: rgba(92, 193, 218, 1);
 
 }
-
-.icon-text-row {
-    margin-left: 26px;
+p{
+    margin-left: 5px;
+    margin-top: 5px;
 }
 
 .content {
-    margin-top:30px ;
-    margin-bottom: 50px;
+    margin-top: 30px;
+    margin-bottom: 75px;
+    margin-left: 10px;
+    gap: 0px;
+    opacity: 0px;
+    font-family: 'Inter';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    color: rgba(79, 79, 79, 1);
+    width: 740px;
+
 }

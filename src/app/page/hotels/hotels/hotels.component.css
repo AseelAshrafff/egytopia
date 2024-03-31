@@ -1,6 +1,9 @@
-.container {
+section {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
     margin: bottom 10px;
-    margin-left: 10px;
-    
-  }
-  
+    margin-left: 50px;
+    margin-right: 50px;
+}
