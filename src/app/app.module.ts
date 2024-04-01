@@ -22,10 +22,6 @@ import { HotelsCardsComponent } from './page/hotels/hotels-cards/hotels-cards.co
 import { ReactiveFormsModule } from '@angular/forms';
 import { ReservationComponent } from './page/reservation/reservation.component';
 
-
-
-
-
 @NgModule({
   declarations: [
     AppComponent,
