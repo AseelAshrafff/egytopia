@@ -22,6 +22,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -41,7 +42,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     CardsComponent,
     HotelsCardsComponent,
     UpperHotelComponent,
-  
+
+
   ],
   imports: [
     BrowserModule,
