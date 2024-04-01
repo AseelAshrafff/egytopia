@@ -42,6 +42,7 @@ const routes: Routes = [
     {path:'favorite', component:FavoritesComponent},
     {path:'profile', component:ProfileComponent},
     {path:'experience', component:ExperienceComponent},
+    {path:'payment', component:PaymentComponent},
   ]},
   //----------------------------- auth layout ---------------------------------------------
   {path:'', component:AuthlayoutComponent,children:[
