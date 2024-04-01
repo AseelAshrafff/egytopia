@@ -15,7 +15,7 @@ import { ProfileComponent } from './page/user/profile/profile.component';
 import {UpperHotelComponent} from './page/hotels/upper-hotel/upper-hotel.component';
 import {HotelsCardsComponent}from './page/hotels/hotels-cards/hotels-cards.component'
 import { ReservationComponent } from './page/reservation/reservation.component';
-ReservationComponent
+
 const routes: Routes = [
   {path:'', redirectTo:'home', pathMatch:'full'},
   {path:'home', component:HomeComponent},

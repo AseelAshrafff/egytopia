@@ -1,19 +1,19 @@
 .container {
-    margin: bottom 10px;
     justify-content: center;
-
 }
 <!----------------gride container------------------------------>
 .grid-container {
+    margin-top: 50px;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-gap: 10px;
+    margin-left: 20px;
+    margin-bottom: 25px;
     margin-top: 35px;
     margin-left: 35px;
     margin-right: 35px;
     justify-content: center;
     align-items: center;
-
 }
 <!---------- grid item---------------------->
 .grid-item {

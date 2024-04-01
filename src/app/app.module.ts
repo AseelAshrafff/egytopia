@@ -25,6 +25,7 @@ import { ReservationComponent } from './page/reservation/reservation.component';
 
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -45,9 +46,6 @@ import { ReservationComponent } from './page/reservation/reservation.component';
     UpperHotelComponent,
     HotelsCardsComponent,
     ReservationComponent,
-    
-  
-
   ],
   imports: [
     BrowserModule,
