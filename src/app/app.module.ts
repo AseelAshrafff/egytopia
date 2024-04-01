@@ -16,11 +16,13 @@ import { ProfileComponent } from './page/user/profile/profile.component';
 import { NotificationsComponent } from './page/user/notifications/notifications.component';
 import { FiltersComponent } from './page/home/filters/filters.component';
 import { CardsComponent } from './page/home/cards/cards.component';
-import { HotelsCardsComponent } from './hotels-cards/hotels-cards.component';
-import { UpperHotelComponent } from './upper-hotel/upper-hotel.component';
+import { UpperHotelComponent } from './page/hotels/upper-hotel/upper-hotel.component';
+import { HttpClientModule } from '@angular/common/http';
+import { HotelsCardsComponent } from './page/hotels/hotels-cards/hotels-cards.component';
 import { ReactiveFormsModule } from '@angular/forms';
-
-
+import { CoastalplacesComponent } from './page/coastalplaces/coastalplaces.component';
+import { ToursticplacesComponent } from './page/toursticplaces/toursticplaces.component';
+import { TourguideComponent } from './page/freelancepages/tourguide/tourguide.component';
 
 
 @NgModule({
@@ -40,14 +42,23 @@ import { ReactiveFormsModule } from '@angular/forms';
     NotificationsComponent,
     FiltersComponent,
     CardsComponent,
-    HotelsCardsComponent,
     UpperHotelComponent,
+<<<<<<< HEAD
 
+=======
+    HotelsCardsComponent,
+    CoastalplacesComponent,
+    ToursticplacesComponent,
+   TourguideComponent
+    
+  
+>>>>>>> 01a34bba9efee960d441b8993815c0436dfa1242
 
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    HttpClientModule,
     ReactiveFormsModule
   ],
   providers: [],

@@ -12,7 +12,11 @@ import { FreelanceComponent } from './page/freelancepages/freelance/freelance.co
 import { FavoritesComponent } from './page/user/favorites/favorites.component';
 import { NotificationsComponent } from './page/user/notifications/notifications.component';
 import { ProfileComponent } from './page/user/profile/profile.component';
-import {HotelsCardsComponent}from './hotels-cards/hotels-cards.component'
+import {UpperHotelComponent} from './page/hotels/upper-hotel/upper-hotel.component';
+import {HotelsCardsComponent}from './page/hotels/hotels-cards/hotels-cards.component'
+import { CoastalplacesComponent } from './page/coastalplaces/coastalplaces.component';
+import { ToursticplacesComponent } from './page/toursticplaces/toursticplaces.component';
+import { TourguideComponent } from './page/freelancepages/tourguide/tourguide.component';
 
 const routes: Routes = [
   {path:'', redirectTo:'home', pathMatch:'full'},
@@ -20,16 +24,19 @@ const routes: Routes = [
   {path:'login', component:LoginComponent},
   {path:'register', component:RegisterComponent},
   {path:'navbar', component:NavbarComponent},
-  {path:'hotels/id', component:HotelsComponent},
-  {path:'hoteldetails/:id', component:HoteldetailsComponent},
+  {path:'hotel',component:HotelsComponent},
+  {path:'hoteldetails', component:HoteldetailsComponent},
   {path:'experience', component:ExperienceComponent},
   {path:'freelance', component:FreelanceComponent},
   {path:'favorite', component:FavoritesComponent},
   {path:'notification', component:NotificationsComponent},
   {path:'profile', component:ProfileComponent},
   {path:'hotels-cards', component:HotelsCardsComponent},
+  {path:'coastalplaces', component:CoastalplacesComponent},
+  {path:'touristicplaces', component:ToursticplacesComponent},
+  {path:'tourguide', component:TourguideComponent},
+  {path:'upper-hotel', component: UpperHotelComponent },
   {path:'**', component:NotfoundComponent}
-  
 ];
 
 @NgModule({

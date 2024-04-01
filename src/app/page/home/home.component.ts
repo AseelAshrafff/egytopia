@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { HomeserviceService } from '../../services/homeservice.service';
 
 @Component({
   selector: 'app-home',
@@ -7,4 +8,7 @@ import { Component } from '@angular/core';
 })
 export class HomeComponent {
 
-}
+HomeImgs:string[]=[];
+//  constructor(_homeservice:HomeserviceService){
+// _homeservice.GetImg().subscribe((response)=>)}
+ }
