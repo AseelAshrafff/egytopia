@@ -25,6 +25,7 @@ import { AllComponent } from './page/home/all/all.component';
 import { CoastalplacesComponent } from './page/home/coastalplaces/coastalplaces.component';
 import { AuthlayoutComponent } from './authlayout/authlayout.component';
 import { BlanklayoutComponent } from './blanklayout/blanklayout.component';
+import { HotelsCardsComponent } from './page/hotels/hotels-cards/hotels-cards.component';
 
 
 
@@ -53,6 +54,7 @@ import { BlanklayoutComponent } from './blanklayout/blanklayout.component';
    AllComponent,
    BlanklayoutComponent,
    AuthlayoutComponent,
+   HotelsCardsComponent,
 
   ],
   imports: [
