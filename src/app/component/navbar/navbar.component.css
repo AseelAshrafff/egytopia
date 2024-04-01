@@ -19,8 +19,8 @@
   .nav-link:focus::after {
     opacity: 1; /* إظهار النقطة عند التركيز */
   }
-  .nav-link:hover,
-  .nav-link:focus{
+  a.active:hover,
+  a.active:focus{
     color: #C89666;
   }
  

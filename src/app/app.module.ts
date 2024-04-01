@@ -18,16 +18,22 @@ import { FiltersComponent } from './page/home/filters/filters.component';
 import { CardsComponent } from './page/home/cards/cards.component';
 import { UpperHotelComponent } from './page/hotels/upper-hotel/upper-hotel.component';
 import { HttpClientModule } from '@angular/common/http';
-import { HotelsCardsComponent } from './page/hotels/hotels-cards/hotels-cards.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { PaymentComponent } from './payment/payment.component';
+import { ToursticplacesComponent } from './page/home/toursticplaces/toursticplaces.component';
+import { TourguideComponent } from './page/freelancepages/tourguide/tourguide.component';
+import { AllComponent } from './page/home/all/all.component';
+import { CoastalplacesComponent } from './page/home/coastalplaces/coastalplaces.component';
+import { AuthlayoutComponent } from './authlayout/authlayout.component';
+import { BlanklayoutComponent } from './blanklayout/blanklayout.component';
+import { HotelsCardsComponent } from './page/hotels/hotels-cards/hotels-cards.component'
 
 
 
 
 @NgModule({
   declarations: [
-    AppComponent,
+   AppComponent,
     NavbarComponent,
     LoginComponent,
     RegisterComponent,
@@ -45,9 +51,12 @@ import { PaymentComponent } from './payment/payment.component';
     UpperHotelComponent,
     HotelsCardsComponent,
     PaymentComponent,
-    
-  
-
+   ToursticplacesComponent,
+   CoastalplacesComponent,
+   TourguideComponent,
+   AllComponent,
+   BlanklayoutComponent,
+   AuthlayoutComponent,
   ],
   imports: [
     BrowserModule,
