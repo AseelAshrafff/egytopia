@@ -18,11 +18,7 @@ import { FiltersComponent } from './page/home/filters/filters.component';
 import { CardsComponent } from './page/home/cards/cards.component';
 import { UpperHotelComponent } from './page/hotels/upper-hotel/upper-hotel.component';
 import { HttpClientModule } from '@angular/common/http';
-import { HotelsCardsComponent } from './page/hotels/hotels-cards/hotels-cards.component';
 import { ReactiveFormsModule } from '@angular/forms';
-import { CoastalplacesComponent } from './page/coastalplaces/coastalplaces.component';
-import { ToursticplacesComponent } from './page/toursticplaces/toursticplaces.component';
-import { TourguideComponent } from './page/freelancepages/tourguide/tourguide.component';
 
 
 @NgModule({
@@ -43,16 +39,10 @@ import { TourguideComponent } from './page/freelancepages/tourguide/tourguide.co
     FiltersComponent,
     CardsComponent,
     UpperHotelComponent,
-<<<<<<< HEAD
 
-=======
-    HotelsCardsComponent,
-    CoastalplacesComponent,
-    ToursticplacesComponent,
-   TourguideComponent
-    
-  
->>>>>>> 01a34bba9efee960d441b8993815c0436dfa1242
+
+
+
 
   ],
   imports: [
