@@ -18,9 +18,9 @@ import { FiltersComponent } from './page/home/filters/filters.component';
 import { CardsComponent } from './page/home/cards/cards.component';
 import { UpperHotelComponent } from './page/hotels/upper-hotel/upper-hotel.component';
 import { HttpClientModule } from '@angular/common/http';
-import { HotelsCardsComponent } from './page/hotels/hotels-cards/hotels-cards.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { ReservationComponent } from './page/reservation/reservation.component';
+
 
 @NgModule({
   declarations: [
@@ -40,8 +40,14 @@ import { ReservationComponent } from './page/reservation/reservation.component';
     FiltersComponent,
     CardsComponent,
     UpperHotelComponent,
-    HotelsCardsComponent,
-    ReservationComponent,
+    ReservationComponent
+
+
+
+
+
+
+
   ],
   imports: [
     BrowserModule,
