@@ -13,6 +13,7 @@ import { FavoritesComponent } from './page/user/favorites/favorites.component';
 import { ProfileComponent } from './page/user/profile/profile.component';
 import {UpperHotelComponent} from './page/hotels/upper-hotel/upper-hotel.component';
 import {HotelsCardsComponent}from './page/hotels/hotels-cards/hotels-cards.component'
+import { PaymentComponent } from './payment/payment.component';
 import { ReservationComponent } from './page/reservation/reservation.component';
 import { AuthlayoutComponent } from './authlayout/authlayout.component';
 import { TourguideComponent } from './page/freelancepages/tourguide/tourguide.component';
@@ -20,6 +21,7 @@ import { CoastalplacesComponent } from './page/home/coastalplaces/coastalplaces.
 import { ToursticplacesComponent } from './page/home/toursticplaces/toursticplaces.component';
 import { AllComponent } from './page/home/all/all.component';
 import { BlanklayoutComponent } from './blanklayout/blanklayout.component';
+
 
 const routes: Routes = [
     //layouts
@@ -50,11 +52,8 @@ const routes: Routes = [
   {path:'**', component:NotfoundComponent},
   {path:'hotels-cards', component:HotelsCardsComponent},
   {path:'upper-hotel', component: UpperHotelComponent },
-
-  
-
+  {path:'payment', component: PaymentComponent},
  {path:'reservation', component: ReservationComponent },
-  
   {path:'**', component:NotfoundComponent}
 
 ];

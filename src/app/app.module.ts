@@ -19,6 +19,7 @@ import { CardsComponent } from './page/home/cards/cards.component';
 import { UpperHotelComponent } from './page/hotels/upper-hotel/upper-hotel.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ReactiveFormsModule } from '@angular/forms';
+import { PaymentComponent } from './payment/payment.component';
 import { ToursticplacesComponent } from './page/home/toursticplaces/toursticplaces.component';
 import { TourguideComponent } from './page/freelancepages/tourguide/tourguide.component';
 import { AllComponent } from './page/home/all/all.component';
@@ -48,6 +49,8 @@ import { HotelsCardsComponent } from './page/hotels/hotels-cards/hotels-cards.co
     FiltersComponent,
     CardsComponent,
     UpperHotelComponent,
+    HotelsCardsComponent,
+    PaymentComponent,
    ToursticplacesComponent,
    CoastalplacesComponent,
    TourguideComponent,
@@ -55,7 +58,6 @@ import { HotelsCardsComponent } from './page/hotels/hotels-cards/hotels-cards.co
    BlanklayoutComponent,
    AuthlayoutComponent,
    HotelsCardsComponent,
-
   ],
   imports: [
     BrowserModule,

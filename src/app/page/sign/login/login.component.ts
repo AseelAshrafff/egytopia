@@ -6,6 +6,7 @@ import { AbstractControl, FormControl,FormGroup, Validators } from '@angular/for
   styleUrl: './login.component.css'
 })
 export class LoginComponent implements OnInit {
+
   constructor( ) {}
 
   registerForm: FormGroup = new FormGroup({
