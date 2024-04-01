@@ -1,0 +1,285 @@
+/*------------------- Start--Main-Containr----------------------------*/
+.Maim-Container {
+    display: block;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    height: 100vh;
+    margin: bottom 10px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+
+
+
+
+
+
+
+.section {
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-items: center; */
+    justify-content: space-between;
+    margin-left: 10px;
+    margin-right: 40px;
+    gap: 30px;
+}
+
+/* Styling for the hotel container */
+.hotel-container {
+    display: flex;
+    width: 894px;
+    height: 176px;
+    top: 273px;
+    left: 40px;
+    gap: 2px;
+    border-radius: 18px;
+    border: 2px 0px 0px 0px;
+    opacity: 0px;
+    background: rgba(255, 255, 255, 1);
+    border: 2px solid rgba(234, 251, 255, 1);
+    margin-bottom: 100px;
+
+}
+
+
+
+
+
+
+
+
+/* Styling for the hotel image */
+.img-container {
+    padding-bottom: 20px;
+}
+
+.img-container img {
+    display: block;
+    /* width: 170px; */
+
+}
+
+.hotel-image {
+    max-width: 170px;
+    height: 170px;
+    border-radius: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+
+}
+
+/* Styling for hotel name and icons */
+.hotel-name {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Styling for icons */
+.icon {
+    font-size: 24px;
+    margin-right: 5px;
+    margin-bottom: 10px;
+    gap: 0px;
+    opacity: 0px;
+    color: #5CC1DA;
+}
+
+
+/*--------------------Upper Form Styling ----------------*/
+.Form {
+    width: 410px;
+    margin-right: 30px;
+
+}
+
+.Check {
+    width: 822px;
+    height: 70px;
+    left: 40px;
+    gap: 0px;
+    border-radius: 16px;
+    border: 2px;
+    /* opacity: 0px; */
+    background: rgba(255, 255, 255, 1);
+    border: 2px solid rgba(234, 251, 255, 1);
+    margin-bottom: 30px;
+
+
+}
+
+.color {
+    width: 24px;
+    height: 24px;
+    gap: 0px;
+    border-radius: 4px;
+    border: 2px;
+    opacity: 0px;
+    border: 2px solid rgba(234, 251, 255, 1);
+    margin-left: 0px;
+    margin-top: 20px;
+}
+
+.Icon {
+    margin-top: 5px;
+    margin-left: 20px;
+    width: 56px;
+    height: 56px;
+    left: 64px;
+    gap: 0px;
+    border-radius: 8px;
+    opacity: 0px;
+    background: rgba(247, 247, 249, 1);
+
+}
+
+.marg {
+    margin-top: 11px;
+    color: #5CC1DA;
+}
+
+.text-end {
+    margin-top: 35px;
+    margin-left: 280px;
+    width: 118px;
+    height: 20px;
+    top: 34px;
+    left: 680px;
+    gap: 0px;
+    opacity: 0px;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0.01em;
+    text-align: left;
+    color: rgba(24, 24, 24, 1);
+
+}
+
+.text-end2 {
+    margin-left: 467px;
+    margin-top: 35px;
+    width: 118px;
+    height: 20px;
+    top: 34px;
+    left: 680px;
+    gap: 0px;
+    opacity: 0px;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0.01em;
+    text-align: left;
+    color: rgba(0, 0, 0, 1);
+
+}
+
+.text-color {
+    font-family: 'Inter';
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 15px;
+    letter-spacing: 0.01em;
+    text-align: left;
+    color: rgba(173, 183, 192, 1);
+}
+
+/*------------------------card--Styling-------------------*/
+.card-container {
+    margin-right: 20px;
+    width: 300px;
+    height: 500px;
+    gap: 0px;
+    border-radius: 16px;
+    opacity: 0px;
+    background: rgba(255, 255, 255, 1);
+    box-shadow: 4px 15px 64px 0px rgba(169, 206, 244, 0.12);
+    justify-content: space-between;
+    display:flex;
+
+}
+
+/*------------------------------------------Card-title--styling----------------------------------------------*/
+
+.card-title {
+    width: 213px;
+    height: 24px;
+    top: 297px;
+    gap: 0px;
+    opacity: 0px;
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+    text-align: left;
+    color: rgba(24, 24, 24, 1);
+
+}
+
+/*------------------------------------------Card-body-Styling--------------------------------------------------*/
+
+.upper {
+
+    width: 265px;
+    height: 248px;
+    margin-top: 10px;
+    margin-right: 20px;
+    gap: 0px;
+    border-radius: 16px;
+    border: 1px solid #5CC1DA;
+    opacity: 0px;
+    background: rgba(255, 255, 255, 0.26);
+
+}
+
+/*----------------------------------------Date-reservation------------------------------------------------------*/
+.date {
+    width: 64px;
+    height: 17px;
+    gap: 0px;
+    opacity: 0px;
+    margin-top: 15px;
+    font-family: 'Inter';
+    font-size: 12px;
+    font: weight 500px;
+    font-weight: 400;
+    line-height: 17px;
+    text-align: left;
+    color: rgba(55, 56, 56, 1);
+
+
+}
+
+.br {
+    /* rotate: -90deg; */
+    width: 48px;
+    height: 0px;
+    top: 26px;
+    left: 165px;
+    gap: 0px;
+    border: 2px;
+    opacity: 0px;
+    color: rgba(92, 193, 218, 1);
+    range: -90 deg;
+    border: 5px solid rgba(92, 193, 218, 1)
+
+}
+
+/*----------------------------------------Card-botton--styling----------------------------------------------------*/
+.botton {
+    width: 250px;
+    height: 48px;
+
+    padding: 14px 60px 14px 60px;
+    gap: 10px;
+    border-radius: 8px;
+    opacity: 0px;
+    color: #fff;
+    background: rgba(87, 172, 193, 1);
+
+}

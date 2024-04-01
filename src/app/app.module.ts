@@ -20,6 +20,7 @@ import { UpperHotelComponent } from './page/hotels/upper-hotel/upper-hotel.compo
 import { HttpClientModule } from '@angular/common/http';
 import { HotelsCardsComponent } from './page/hotels/hotels-cards/hotels-cards.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { ReservationComponent } from './page/reservation/reservation.component';
 
 
 
@@ -43,6 +44,7 @@ import { ReactiveFormsModule } from '@angular/forms';
     CardsComponent,
     UpperHotelComponent,
     HotelsCardsComponent,
+    ReservationComponent,
     
   
 

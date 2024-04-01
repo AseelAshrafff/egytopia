@@ -14,7 +14,8 @@ import { NotificationsComponent } from './page/user/notifications/notifications.
 import { ProfileComponent } from './page/user/profile/profile.component';
 import {UpperHotelComponent} from './page/hotels/upper-hotel/upper-hotel.component';
 import {HotelsCardsComponent}from './page/hotels/hotels-cards/hotels-cards.component'
-
+import { ReservationComponent } from './page/reservation/reservation.component';
+ReservationComponent
 const routes: Routes = [
   {path:'', redirectTo:'home', pathMatch:'full'},
   {path:'home', component:HomeComponent},
@@ -30,6 +31,8 @@ const routes: Routes = [
   {path:'profile', component:ProfileComponent},
   {path:'hotels-cards', component:HotelsCardsComponent},
   {path:'upper-hotel', component: UpperHotelComponent },
+  {path:'reservation', component: ReservationComponent },
+  
   {path:'**', component:NotfoundComponent}
 ];
 
