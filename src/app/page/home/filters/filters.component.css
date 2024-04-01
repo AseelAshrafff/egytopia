@@ -20,27 +20,31 @@
    }
    .filter2{
     position: absolute;
-    left: 200px; 
+    left: 350px; 
     width: 120px;
     height: 40px;
     
    }
    .filter3{
      position: absolute;
-     left: 450px;
+     left: 700px;
      width: 200px;
      height: 40px;
    }
    .filter4{
     position: absolute;
-    left: 800px;
+    left: 1100px;
      width: 200px;
      height: 40px;
    }
-   button:focus{
+   button.active{
      background-color: #E7B88A;
      color: #FFFFFF;
    }
+   b1:focus{
+    background-color: #E7B88A;
+    color: #FFFFFF;
+  }
    .filter5{
     background-color: #E7B88A;
     width: 110px;

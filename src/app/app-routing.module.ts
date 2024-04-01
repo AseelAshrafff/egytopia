@@ -10,33 +10,47 @@ import { NotfoundComponent } from './page/notfound/notfound.component';
 import { ExperienceComponent } from './page/experiencepages/experience/experience.component';
 import { FreelanceComponent } from './page/freelancepages/freelance/freelance.component';
 import { FavoritesComponent } from './page/user/favorites/favorites.component';
-import { NotificationsComponent } from './page/user/notifications/notifications.component';
 import { ProfileComponent } from './page/user/profile/profile.component';
 import {UpperHotelComponent} from './page/hotels/upper-hotel/upper-hotel.component';
 import {HotelsCardsComponent}from './page/hotels/hotels-cards/hotels-cards.component'
-import { CoastalplacesComponent } from './page/coastalplaces/coastalplaces.component';
-import { ToursticplacesComponent } from './page/toursticplaces/toursticplaces.component';
+import { ToursticplacesComponent } from './page/home/toursticplaces/toursticplaces.component';
 import { TourguideComponent } from './page/freelancepages/tourguide/tourguide.component';
+import { AllComponent } from './page/home/all/all.component';
+import { CoastalplacesComponent } from './page/home/coastalplaces/coastalplaces.component';
+import { AuthlayoutComponent } from './authlayout/authlayout.component';
+import { BlanklayoutComponent } from './blanklayout/blanklayout.component';
+
 
 const routes: Routes = [
-  {path:'', redirectTo:'home', pathMatch:'full'},
-  {path:'home', component:HomeComponent},
-  {path:'login', component:LoginComponent},
-  {path:'register', component:RegisterComponent},
-  {path:'navbar', component:NavbarComponent},
-  {path:'hotel',component:HotelsComponent},
-  {path:'hoteldetails', component:HoteldetailsComponent},
-  {path:'experience', component:ExperienceComponent},
-  {path:'freelance', component:FreelanceComponent},
-  {path:'favorite', component:FavoritesComponent},
-  {path:'notification', component:NotificationsComponent},
-  {path:'profile', component:ProfileComponent},
+    //layouts
+  //------------------- blank component ------------------------------------------
+    {path:'', component:BlanklayoutComponent,
+     children:[
+    {path:'', redirectTo:'home', pathMatch:'full'},
+    {path:'', component:HomeComponent, children:[
+      {path:'', redirectTo:'home', pathMatch:'full'},
+      {path:'all', component:AllComponent},
+      {path:'hotel',component:HotelsComponent},
+      {path:'touristicplaces', component:ToursticplacesComponent},
+      {path:'coastalplaces', component:CoastalplacesComponent},
+    ]},
+    {path:'freelance', component:FreelanceComponent},
+    {path:'tourguide', component:TourguideComponent},
+    {path:'hoteldetails', component:HoteldetailsComponent},
+    {path:'favorite', component:FavoritesComponent},
+    {path:'profile', component:ProfileComponent},
+    {path:'experience', component:ExperienceComponent},
+  ]},
+  //----------------------------- auth layout ---------------------------------------------
+  {path:'', component:AuthlayoutComponent,children:[
+    {path:'login', component:LoginComponent},
+    {path:'register', component:RegisterComponent},
+  ]},
+// ------------------------------ not found---------------------------------------------
+  {path:'**', component:NotfoundComponent},
   {path:'hotels-cards', component:HotelsCardsComponent},
-  {path:'coastalplaces', component:CoastalplacesComponent},
-  {path:'touristicplaces', component:ToursticplacesComponent},
-  {path:'tourguide', component:TourguideComponent},
   {path:'upper-hotel', component: UpperHotelComponent },
-  {path:'**', component:NotfoundComponent}
+  
 ];
 
 @NgModule({

@@ -20,9 +20,12 @@ import { UpperHotelComponent } from './page/hotels/upper-hotel/upper-hotel.compo
 import { HttpClientModule } from '@angular/common/http';
 import { HotelsCardsComponent } from './page/hotels/hotels-cards/hotels-cards.component';
 import { ReactiveFormsModule } from '@angular/forms';
-import { CoastalplacesComponent } from './page/coastalplaces/coastalplaces.component';
-import { ToursticplacesComponent } from './page/toursticplaces/toursticplaces.component';
+import { ToursticplacesComponent } from './page/home/toursticplaces/toursticplaces.component';
 import { TourguideComponent } from './page/freelancepages/tourguide/tourguide.component';
+import { AllComponent } from './page/home/all/all.component';
+import { CoastalplacesComponent } from './page/home/coastalplaces/coastalplaces.component';
+import { AuthlayoutComponent } from './authlayout/authlayout.component';
+import { BlanklayoutComponent } from './blanklayout/blanklayout.component';
 
 @NgModule({
   declarations: [
@@ -43,10 +46,13 @@ import { TourguideComponent } from './page/freelancepages/tourguide/tourguide.co
     CardsComponent,
     UpperHotelComponent,
     HotelsCardsComponent,
-    CoastalplacesComponent,
     ToursticplacesComponent,
-   TourguideComponent
-    
+    TourguideComponent,
+    CoastalplacesComponent,
+    AllComponent,
+    AuthlayoutComponent,
+    BlanklayoutComponent,
+  
   
 
   ],
