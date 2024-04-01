@@ -18,7 +18,6 @@ import { FiltersComponent } from './page/home/filters/filters.component';
 import { CardsComponent } from './page/home/cards/cards.component';
 import { UpperHotelComponent } from './page/hotels/upper-hotel/upper-hotel.component';
 import { HttpClientModule } from '@angular/common/http';
-import { HotelsCardsComponent } from './page/hotels/hotels-cards/hotels-cards.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { ToursticplacesComponent } from './page/home/toursticplaces/toursticplaces.component';
 import { TourguideComponent } from './page/freelancepages/tourguide/tourguide.component';
@@ -27,9 +26,12 @@ import { CoastalplacesComponent } from './page/home/coastalplaces/coastalplaces.
 import { AuthlayoutComponent } from './authlayout/authlayout.component';
 import { BlanklayoutComponent } from './blanklayout/blanklayout.component';
 
+
+
+
 @NgModule({
   declarations: [
-    AppComponent,
+   AppComponent,
     NavbarComponent,
     LoginComponent,
     RegisterComponent,
@@ -45,15 +47,12 @@ import { BlanklayoutComponent } from './blanklayout/blanklayout.component';
     FiltersComponent,
     CardsComponent,
     UpperHotelComponent,
-    HotelsCardsComponent,
-    ToursticplacesComponent,
-    TourguideComponent,
-    CoastalplacesComponent,
-    AllComponent,
-    AuthlayoutComponent,
-    BlanklayoutComponent,
-  
-  
+   ToursticplacesComponent,
+   CoastalplacesComponent,
+   TourguideComponent,
+   AllComponent,
+   BlanklayoutComponent,
+   AuthlayoutComponent,
 
   ],
   imports: [
