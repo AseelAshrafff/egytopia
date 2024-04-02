@@ -15,7 +15,7 @@
   <!------------------------------------Stepper End--------------------------------------------------------------->
 
   <!-------------------------------------Start-Primary-container--------------------------------------------------->
-  <div class="section mt-5">
+  <div class="section gap-4 mt-5">
     <div class="d-flex gap-4">
       <div class="left">
         <!---------------------------------Hotel-Container---------------------------------------------------------->
@@ -39,7 +39,7 @@
 
             <section class="row mt-5 fa-0m">
               <div class="col md-6 mx-auto">
-                <span class="d-block text-cente">3Beds</span>
+                <span class="d-block text-center">3Beds</span>
                 <i class="fas fa-bed d-block icon"></i>
               </div>
               <div class="col md-5 mx-auto">
@@ -67,26 +67,26 @@
           <!------------------------------Inputs------------------------------------->
           <div class="form-group">
             <div class="d-flex gap-5">
-              <div class="col-md-6 col-lg-3 mb-5 Form">
+              <div class="col-md-6  mb-5 Form">
                 <label for="input1">First Name</label>
-                <input type="text" class="form-control" id="input1" placeholder="" />
+                <input type="text"class="form-control"id="input1"placeholder=""/>
               </div>
               <!------------------------------------------------------------------->
-              <div class="col-md-6 col-lg-3 mb-5 Form">
+              <div class="col-md-6  mb-5 Form">
                 <label for="input2">Last Name</label>
-                <input type="text" class="form-control" id="input2" placeholder="" />
+                <input type="text"class="form-control" id="input2" placeholder=""/>
               </div>
             </div>
             <!----------------------------------------------------------------------->
             <div class="d-flex gap-5">
-              <div class="col-md-6 col-lg-3 mb-5 mt-2 Form">
+              <div class="col-md-6  mb-5 mt-2 Form">
                 <label for="input3"> E-mail</label>
-                <input type="text" class="form-control" id="input3" placeholder="" />
+                <input type="text"class="form-control"id="input3"placeholder=""/>
               </div>
               <!---------------------------------------------------------------------->
-              <div class="col-md-6 col-lg-3 mb-5 mt-2 Form">
+              <div class="col-md-6  mb-5 mt-2 Form">
                 <label for="input4">Phone Number</label>
-                <input type="text" class="form-control" id="input4" placeholder="" />
+                <input  type="text" class="form-control"id="input4"placeholder=""/>
               </div>
               <!----------------------------------------------------------------------->
             </div>
@@ -97,13 +97,18 @@
           <div class="form-group">
             <!------------------------option1------------------------------->
             <div class="form-check Check">
-              <input class="form-check-input color" type="checkbox" value="" id="checkOption1" />
-              <label class="form-check-label d-flex position-relative" for="checkOption1">
+              <input
+                class="form-check-input color"
+                type="checkbox"
+                value=""
+                id="checkOption1"
+              />
+              <label class="form-check-label d-flex" for="checkOption1">
                 <div class="d-flex gap-2">
                   <div class="Icon text-center">
                     <i class="fas fa-car marg fs-1"></i>
                   </div>
-                  <div class="d-flex">
+                  <div class="d-flex gap-5 justify-content-between">
                     <div class="mt-2">
                       <h6>park</h6>
                       <p class="text-color">
@@ -117,7 +122,12 @@
             </div>
             <!------------------------option2-------------------------------->
             <div class="form-check Check">
-              <input class="form-check-input color" type="checkbox" value="" id="checkOption1" />
+              <input
+                class="form-check-input color"
+                type="checkbox"
+                value=""
+                id="checkOption1"
+              />
               <label class="form-check-label" for="checkOption1">
                 <div class="d-flex gap-2">
                   <div class="Icon text-center">
@@ -137,14 +147,14 @@
             </div>
             <!------------------------optipon3------------------------------->
             <div class="form-check Check">
-              <input class="form-check-input color" type="checkbox" value="" id="checkOption1" />
+              <input
+                class="form-check-input color"type="checkbox"value=""id="checkOption1"/>
               <label class="form-check-label d-flex" for="checkOption1">
                 <div class="d-flex gap-2">
                   <div class="Icon text-center">
                     <i class="fas fa-car marg fs-1"></i>
                   </div>
-
-                  <div class="d-flex">
+                  <div class="d-flex gap-5 justify-content-between">
                     <div class="mt-2">
                       <h6>park</h6>
                       <p class="text-color">
@@ -158,7 +168,12 @@
             </div>
             <!-------------------------option4-------------------------------->
             <div class="form-check Check">
-              <input class="form-check-input color" type="checkbox" value="" id="checkOption1" />
+              <input
+                class="form-check-input color"
+                type="checkbox"
+                value=""
+                id="checkOption1"
+              />
               <label class="form-check-label" for="checkOption1">
                 <div class="d-flex gap-2">
                   <div class="Icon text-center">
@@ -181,38 +196,59 @@
         </form>
       </div>
 
-      <!------------------ Responsive--reservation Card--------------------------------------------->
-
+      <!------------------ Responsive--Card--------------------------------------------->
       <div class="card text-center card-container">
-        <div class="card-body ">
-          <h5 class="card-title mt-0">Reservation Summary</h5>
+        <div class="card-body">
+          <h5 class="card-title">Reservation Summary</h5>
           <div class="upper">
-            <div class=" row d-flex  ml-1">
-              <div class=" col date ">
-
-
+            <!-----------------------------Date of check.OUT------------------------------------------->
+            <div class="box">
+              <div class="date">
                 <p>Check.In</p>
                 <p>Sun,22May2024</p>
                 <p>From 16:00</p>
-
               </div>
-              <br class="br">
+              <div class="divider"></div>
+
               <!-------------------start-reghit-side-------------------------------------->
-              <div class=" col date regit-date ms-auto">
-                <p>Check.In</p>
-                <p>Sun,22May2024</p>
-                <p>From 16:00</p>
+              <div class="date">
+                <p>Check.out</p>
+                <p>wed,25May2024</p>
+                <p>by 11:00</p>
               </div>
             </div>
+            <!-----------------Total-Night-Of-Stay------------------------------------------>
+            <div class="d-block total">
+              <h4 class="card-titels">Total night of stay:</h4>
+              <div class="d-flex Total">
+                <span class="m-1">3</span>
+                <i class="fas fa-calendar icon"></i>
+              </div>
 
-
-
-
-
+              <div class="section2">
+                <h5 class="card-titels">You selected:</h5>
+                <p>Lakeside Motel Warefront</p>
+              </div>
+            </div>
           </div>
+          <!-------------------------startsection3------------------------->
+          <div class="Section3">
+            <h4 class="card-titels fs-5">Your price summary:</h4>
+            <div>
+              <div class="d-flex gap-5 justify-content-between mt-3">
+                <h5 class="Left">Rooms and offer:</h5>
+                <p class="Right mt-2">$78.90</p>
+              </div>
+              <div class="d-flex gap-5">
+                <h5 class="Left">8% vat :</h5>
+                <p class="Right ">$50.00</p>
+              </div>
 
-          <div class="d-block  " >
-
+              <div class="last d-flex gap-5">
+                <h5 class=" card-titels ">Total Price:</h5>
+                <p class="">$128.00</p>
+              </div>
+            </div>
           </div>
 
           <!---------------------------------- لازم أعمل الروتينج هنا فمتنسيييييييييييييييييييييييييش-------------------------------->
