@@ -20,7 +20,11 @@ import { TourguideComponent } from './page/freelancepages/tourguide/tourguide.co
 import { CoastalplacesComponent } from './page/home/coastalplaces/coastalplaces.component';
 import { ToursticplacesComponent } from './page/home/toursticplaces/toursticplaces.component';
 import { BlanklayoutComponent } from './blanklayout/blanklayout.component';
+
+import { authGuard } from './guards/auth.guard';
+
 import { SelectedplaceComponent } from './page/selectedplace/selectedplace.component';
+
 
 
 
@@ -29,20 +33,24 @@ const routes: Routes = [
   //------------------- blank component ------------------------------------------
     {path:'', component:BlanklayoutComponent,
      children:[
-    {path:'', redirectTo:'home', pathMatch:'full'},
+      { path: '', redirectTo: '/register', pathMatch: 'full' },
     {path:'', component:HomeComponent, children:[
       {path:'', redirectTo:'home', pathMatch:'full'},
-      {path:'hotel',component:HotelsComponent},
-      {path:'touristicplaces', component:ToursticplacesComponent},
-      {path:'coastalplaces', component:CoastalplacesComponent},
+
+      
+
+      {path:'hotel',canActivate:[authGuard] ,component:HotelsComponent},
+      {path:'touristicplaces', canActivate:[authGuard] ,component:ToursticplacesComponent},
+      {path:'coastalplaces', canActivate:[authGuard] ,component:CoastalplacesComponent},
+
     ]},
-    {path:'freelance', component:FreelanceComponent},
-    {path:'tourguide', component:TourguideComponent},
-    {path:'hoteldetails', component:HoteldetailsComponent},
-    {path:'favorite', component:FavoritesComponent},
-    {path:'profile', component:ProfileComponent},
-    {path:'experience', component:ExperienceComponent},
-    {path:'payment', component:PaymentComponent},
+    {path:'freelance', canActivate:[authGuard] ,component:FreelanceComponent},
+    {path:'tourguide', canActivate:[authGuard] ,component:TourguideComponent},
+    {path:'hoteldetails', canActivate:[authGuard] ,component:HoteldetailsComponent},
+    {path:'favorite', canActivate:[authGuard] ,component:FavoritesComponent},
+    {path:'profile', canActivate:[authGuard] ,component:ProfileComponent},
+    {path:'experience', canActivate:[authGuard] ,component:ExperienceComponent},
+    {path:'payment', canActivate:[authGuard] ,component:PaymentComponent},
   ]},
   //----------------------------- auth layout ---------------------------------------------
   {path:'', component:AuthlayoutComponent,children:[
@@ -50,12 +58,14 @@ const routes: Routes = [
     {path:'register', component:RegisterComponent},
   ]},
 // ------------------------------ not found---------------------------------------------
+
   // {path:'**', component:NotfoundComponent},
-  {path:'selectedplace', component:SelectedplaceComponent},
-  {path:'hotels-cards', component:HotelsCardsComponent},
-  {path:'upper-hotel', component: UpperHotelComponent },
-  {path:'payment', component: PaymentComponent},
- {path:'reservation', component: ReservationComponent },
+  {path:'selectedplace', canActivate:[authGuard] ,component:SelectedplaceComponent},
+  {path:'hotels-cards', canActivate:[authGuard] ,component:HotelsCardsComponent},
+  {path:'upper-hotel', canActivate:[authGuard] ,component: UpperHotelComponent },
+  {path:'payment', canActivate:[authGuard] ,component: PaymentComponent},
+ {path:'reservation', canActivate:[authGuard] ,component: ReservationComponent },
+
   {path:'**', component:NotfoundComponent}
 
 ];

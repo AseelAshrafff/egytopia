@@ -11,6 +11,8 @@
                 <div class="title">
                   <h3>Welcome to Egy<span class="image-letter"></span>opia</h3>
                 </div>
+                <div  *ngIf="error" class="alert alert-info" style="width: 430px; height: 40px;">  {{error}} </div>
+
                 <form
                   (ngSubmit)="onSubmit(registerForm)"
                   [formGroup]="registerForm"
@@ -129,8 +131,8 @@
                         
                       >
                         <option
-                        
-                        value="" disabled selected>
+                        *ngIf="!registerForm.get('country')?.value"
+                        value="Selectd Country" disabled selected>
                           Select Country
                         </option>
                         <option value="USA">United States</option>
@@ -169,6 +171,16 @@
                       <i class="ezy__signup14-icon"></i>
                      
                     </div>
+                  </div>
+                  <div class="form-group position-relative mb-5">
+                    <input
+                      formControlName="dob"
+                      type="date"
+                      class="form-control"
+                      id="dateOfBirth"
+                      placeholder="Date of Birth"
+                    />
+                    <!-- Error messages for dateOfBirth -->
                   </div>
                   <div
                     for="phoneNumber"
@@ -238,6 +250,19 @@
                       </div>
                     </div>
                   </div>
+                  <div class="form-group position-relative mb-5">
+                    <select
+                      formControlName="role"
+                      class="form-select"
+                      id="role"
+                    >
+                      <option *ngIf="!registerForm.get('role')?.value" value="" disabled selected>Select Role</option>
+                      <option value="admin">Admin</option>
+                      <option value="user">User</option>
+                      <option value="tourguide">Tour Guide</option>
+                    </select>
+                  </div>
+                    <!-- Error messages for role -->
                   <div class="form-group form-check">
                     <input
                       type="checkbox"
@@ -254,7 +279,9 @@
                     type="submit"
                     class="btn ezy__signup14-btn-submit mt-3"
                   >
-                    Register <i class="fas fa-arrow-right"></i>
+
+                    <span *ngIf="!isLoading">Register </span>
+                    <i  *ngIf="isLoading"  class="fas fa-spinner fa-spin"></i>
                   </button>
                   <div class="mt-2">
                    <p class="mb-0 small">
@@ -262,12 +289,12 @@
                     </p>
 
                   </div>
-                </form>
+                </form> 
               </div>
             </div>
             <div class="col-12 col-lg-5 d-none d-lg-block">
-              <div class="d-flex align-items-center h-100">
-                <img src="\assets\images\signin image.png" alt="" />
+              <div class="border border-dark d-flex justify-content-center align-items-center" style="height: 100%;">
+                <img src="\assets\images\signin image.png" alt="" class="img-fluid" />
               </div>
             </div>
           </div>
@@ -276,3 +303,4 @@
     </div>
   </div>
 </section>
+

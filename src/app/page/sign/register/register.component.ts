@@ -13,34 +13,79 @@ export class RegisterComponent implements OnInit {
 
   constructor( private __AuthService: AuthService, private __Router: Router ) {}
  
-
-  registerForm: FormGroup = new FormGroup({
+  error: string ="";
+  isLoading: boolean = false;
+  
+  registerForm: FormGroup = new FormGroup({ 
     firstName: new FormControl(null, [Validators.required, Validators.minLength(3), Validators.maxLength(30)]),
     lastName: new FormControl(null, [Validators.required, Validators.minLength(3), Validators.maxLength(30)]),
     email: new FormControl(null, [Validators.required, Validators.email]),
     country: new FormControl(null, Validators.required),
     phoneNumber: new FormControl(null, [Validators.required, this.phoneNumberValidator]),
+    dob: new FormControl(null, Validators.required),
+    role: new FormControl(null, Validators.required), 
     password: new FormControl(null, [Validators.required, Validators.minLength(8)]),
-    confirmPassword: new FormControl(null, [Validators.required]), // Validators for confirm password
+    confirmPassword: new FormControl(null, [Validators.required]),
   }, { validators: this.passwordMatchValidator });
+ 
   
 
   ngOnInit() {}
 
   onSubmit(registerForm: FormGroup) {
+    this.isLoading= true;
    this.__AuthService.signup(registerForm.value).subscribe({
      next:(response)=>{
-       if(response.message == "success"){
-        //localStorage.setItem('userToken', response.token);
-        this.__AuthService.saveUserData();
-        this.__Router.navigate(['/signin']);
-       }
-       else{
-         alert(response.message);
-       }
-     }
-   })
-  }
+      this.isLoading = false;
+      if (response.succeeded) {
+        console.log('Registration successful');
+        this.__Router.navigate(['/login']);
+        // Optionally, you can handle successful registration here
+      } else {
+        // Handle errors returned by the server
+        if (response.errors && response.errors.length > 0) {
+          this.error = this.getErrorDescription(response.errors);
+        } else {
+          this.error = 'An unknown error occurred during registration.';
+        }
+      }
+    },
+    error: (error) => {
+      // Handle HTTP error
+      console.error('Registration failed:', error);
+      this.error = 'An error occurred during registration. Please try again later.';
+    }
+  });
+}
+
+private getErrorDescription(errors: any[]): string {
+  let errorMessages: string[] = [];
+  errors.forEach(error => {
+    switch (error.code) {
+      case 'DuplicateUserName':
+        errorMessages.push(`Username '${error.description}' is already taken.`);
+        break;
+      case 'DuplicateEmail':
+        errorMessages.push(`Email '${error.description}' is already taken.`);
+        break;
+      case 'PasswordRequiresNonAlphanumeric':
+        errorMessages.push('Password must contain at least one non-alphanumeric character.');
+        break;
+      case 'PasswordRequiresLower':
+        errorMessages.push('Password must contain at least one lowercase letter.');
+        break;
+      case 'PasswordRequiresUpper':
+        errorMessages.push('Password must contain at least one uppercase letter.');
+        break;
+      // Add more cases for other error types as needed
+      default:
+        errorMessages.push('An unknown error occurred during registration.');
+        break;
+    }
+  });
+  return errorMessages.join(' ');
+}
+       
 
   // Custom validator to check phone number format
   phoneNumberValidator(control: AbstractControl): { [key: string]: boolean } | null {

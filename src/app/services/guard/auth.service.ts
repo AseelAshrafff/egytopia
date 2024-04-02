@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { HttpClient , HttpErrorResponse } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { jwtDecode } from 'jwt-decode';
 @Injectable({
@@ -8,18 +8,23 @@ import { jwtDecode } from 'jwt-decode';
 export class AuthService {
 
   constructor(private _HttpClient:HttpClient) {}
+ 
+  baseserverUrl = 'https://localhost:7047/api/ApplicationUsre'
+
  userData:object = [];  
 
  saveUserData()
  {
   //token local - decode - 
   let encodedToken = JSON.stringify(localStorage.getItem('userToken'));
-  let decodedToken = jwtDecode(encodedToken);
+  let decodedToken:object = jwtDecode(encodedToken);
   this.userData = decodedToken;
   console.log(this.userData);
  }
-  signup(userData:object):Observable<any>
-  {
-    return this._HttpClient.post(`https://reqres.in/api/register`,userData)
-  }
+ signup(userData: object): Observable<any> {
+  return this._HttpClient.post(`${this.baseserverUrl}/Register`, userData);
+}
+signin(userData: object): Observable<any> {
+  return this._HttpClient.post(`${this.baseserverUrl}/Login`, userData);
+}
 }
