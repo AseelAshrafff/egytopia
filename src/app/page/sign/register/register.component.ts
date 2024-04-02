@@ -3,7 +3,7 @@ import { AbstractControl, FormControl, FormGroup, Validators } from '@angular/fo
 import { parsePhoneNumberFromString , PhoneNumber } from 'libphonenumber-js';
 import { Router } from '@angular/router';
 import { HttpClient } from '@angular/common/http';
-import { AuthService } from '../../../services/auth.service';
+import { AuthService } from '../../../services/guard/auth.service';
 @Component({
   selector: 'app-register',
   templateUrl:'./register.component.html',

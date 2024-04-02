@@ -14,6 +14,6 @@ export class HotelsService {
   }
   GetHotel():Observable<any>{
     return this._httpclient.get(``)
-   }
+   }  
  
 }
