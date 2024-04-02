@@ -11,16 +11,17 @@ import { ExperienceComponent } from './page/experiencepages/experience/experienc
 import { FreelanceComponent } from './page/freelancepages/freelance/freelance.component';
 import { FavoritesComponent } from './page/user/favorites/favorites.component';
 import { ProfileComponent } from './page/user/profile/profile.component';
-import {UpperHotelComponent} from './page/hotels/upper-hotel/upper-hotel.component';
-import {HotelsCardsComponent}from './page/hotels/hotels-cards/hotels-cards.component'
+import {UpperHotelComponent} from './page/selectedplace/upper-hotel/upper-hotel.component';
+import {HotelsCardsComponent}from './page/selectedplace/hotels-cards/hotels-cards.component'
 import { PaymentComponent } from './payment/payment.component';
 import { ReservationComponent } from './page/reservation/reservation.component';
 import { AuthlayoutComponent } from './authlayout/authlayout.component';
 import { TourguideComponent } from './page/freelancepages/tourguide/tourguide.component';
 import { CoastalplacesComponent } from './page/home/coastalplaces/coastalplaces.component';
 import { ToursticplacesComponent } from './page/home/toursticplaces/toursticplaces.component';
-import { AllComponent } from './page/home/all/all.component';
 import { BlanklayoutComponent } from './blanklayout/blanklayout.component';
+import { SelectedplaceComponent } from './page/selectedplace/selectedplace.component';
+
 
 
 const routes: Routes = [
@@ -31,7 +32,6 @@ const routes: Routes = [
     {path:'', redirectTo:'home', pathMatch:'full'},
     {path:'', component:HomeComponent, children:[
       {path:'', redirectTo:'home', pathMatch:'full'},
-      {path:'all', component:AllComponent},
       {path:'hotel',component:HotelsComponent},
       {path:'touristicplaces', component:ToursticplacesComponent},
       {path:'coastalplaces', component:CoastalplacesComponent},
@@ -49,7 +49,8 @@ const routes: Routes = [
     {path:'register', component:RegisterComponent},
   ]},
 // ------------------------------ not found---------------------------------------------
-  {path:'**', component:NotfoundComponent},
+  // {path:'**', component:NotfoundComponent},
+  {path:'selectedplace', component:SelectedplaceComponent},
   {path:'hotels-cards', component:HotelsCardsComponent},
   {path:'upper-hotel', component: UpperHotelComponent },
   {path:'payment', component: PaymentComponent},

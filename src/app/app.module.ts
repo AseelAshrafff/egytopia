@@ -16,17 +16,18 @@ import { ProfileComponent } from './page/user/profile/profile.component';
 import { NotificationsComponent } from './page/user/notifications/notifications.component';
 import { FiltersComponent } from './page/home/filters/filters.component';
 import { CardsComponent } from './page/home/cards/cards.component';
-import { UpperHotelComponent } from './page/hotels/upper-hotel/upper-hotel.component';
+import { UpperHotelComponent } from './page/selectedplace/upper-hotel/upper-hotel.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ReactiveFormsModule } from '@angular/forms';
 import { PaymentComponent } from './payment/payment.component';
 import { ToursticplacesComponent } from './page/home/toursticplaces/toursticplaces.component';
 import { TourguideComponent } from './page/freelancepages/tourguide/tourguide.component';
-import { AllComponent } from './page/home/all/all.component';
 import { CoastalplacesComponent } from './page/home/coastalplaces/coastalplaces.component';
 import { AuthlayoutComponent } from './authlayout/authlayout.component';
 import { BlanklayoutComponent } from './blanklayout/blanklayout.component';
-import { HotelsCardsComponent } from './page/hotels/hotels-cards/hotels-cards.component';
+import { HotelsCardsComponent } from './page/selectedplace/hotels-cards/hotels-cards.component';
+import { SelectedplaceComponent } from './page/selectedplace/selectedplace.component';
+
 
 
 
@@ -54,10 +55,10 @@ import { HotelsCardsComponent } from './page/hotels/hotels-cards/hotels-cards.co
    ToursticplacesComponent,
    CoastalplacesComponent,
    TourguideComponent,
-   AllComponent,
    BlanklayoutComponent,
    AuthlayoutComponent,
    HotelsCardsComponent,
+  SelectedplaceComponent
   ],
   imports: [
     BrowserModule,

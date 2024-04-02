@@ -1,11 +1,12 @@
 .container{
     display: flex;
-    position: relative;
+     position: relative; 
+    flex-wrap: wrap;
    }
    .filters h6{
      font-weight: bold;
    }
-   .filter1,.filter2,.filter3,.filter4{
+   .filter2,.filter3,.filter4{
      background-color: #FFF1E3;
      border-radius: 24px;
      border: none ;
@@ -13,21 +14,16 @@
      font-weight: bold;
      display: flex;
    }
-   .filter1{
-     position: absolute;
-     width: 74px;
-     height: 40px;
-   }
    .filter2{
     position: absolute;
-    left: 350px; 
+    left: 30px; 
     width: 120px;
     height: 40px;
-    
+
    }
    .filter3{
      position: absolute;
-     left: 700px;
+     left: 500px;
      width: 200px;
      height: 40px;
    }
@@ -45,16 +41,7 @@
     background-color: #E7B88A;
     color: #FFFFFF;
   }
-   .filter5{
-    background-color: #E7B88A;
-    width: 110px;
-    height: 40px;
-    border-radius: 16px;
-    border: none ;
-    position: absolute;
-    left:1180px ;
-    color: #FFFFFF;
-  }
+ 
   .circle{
     background-color: #E7B88A;
     width: 38px;
@@ -91,10 +78,7 @@
       margin-left:11px;
      }
      
-    .filter1 h6{
-     margin-top:7px;
-     margin-left:20px;
-     }
+ 
    
  
  
