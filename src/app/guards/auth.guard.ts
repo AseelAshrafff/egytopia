@@ -1,8 +1,8 @@
 import { CanActivateFn ,ActivatedRouteSnapshot, RouterStateSnapshot,UrlTree, Router } from '@angular/router';
 import { Injectable, inject } from '@angular/core';
 import { Observable } from 'rxjs';
-import { AuthService } from '../services/auth.service';
 import { Inject } from '@angular/core';
+import { AuthService } from '../services/guard/auth.service';
 
 
 

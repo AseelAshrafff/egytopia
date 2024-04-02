@@ -11,7 +11,7 @@ import { AuthService } from '../../../services/guard/auth.service';
 })
 export class RegisterComponent implements OnInit {
 
-  constructor( private __AuthService: AuthService, private __Router: Router ) {}
+  constructor( private __AuthService: AuthService, private __Router: Router  ) {}
  
   error: string ="";
   isLoading: boolean = false;
