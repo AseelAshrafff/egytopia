@@ -39,8 +39,8 @@ const routes: Routes = [
 
       
 
-      {path:'hotel',canActivate:[authGuard] ,component:HotelsComponent},
-      {path:'touristicplaces', canActivate:[authGuard] ,component:ToursticplacesComponent},
+      {path:'hotel',canActivate:[authGuard] , component:HotelsComponent},
+      {path:'touristicplaces', canActivate:[authGuard] , component:ToursticplacesComponent},
       {path:'coastalplaces', canActivate:[authGuard] ,component:CoastalplacesComponent},
 
     ]},

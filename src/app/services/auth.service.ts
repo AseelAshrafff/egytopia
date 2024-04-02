@@ -15,11 +15,20 @@ export class AuthService {
 
  saveUserData()
  {
-  //token local - decode - 
-  let encodedToken = JSON.stringify(localStorage.getItem('userToken'));
-  let decodedToken:object = jwtDecode(encodedToken);
-  this.userData = decodedToken;
-  console.log(this.userData);
+  {
+    // Retrieve token from local storage
+    const encodedToken = localStorage.getItem('token');
+    // Check if token exists
+    if (encodedToken) {
+      // Decode token
+      const decodedToken: object = jwtDecode(encodedToken);
+      // Save user data
+      this.userData = decodedToken;
+      console.log(this.userData);
+    } else {
+      console.error('Token not found in local storage.');
+    }
+  }
  }
  signup(userData: object): Observable<any> {
   return this._HttpClient.post(`${this.baseserverUrl}/Register`, userData);

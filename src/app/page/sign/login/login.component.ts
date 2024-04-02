@@ -34,11 +34,11 @@ export class LoginComponent implements OnInit {
           localStorage.setItem('token', response.token);
           this.__AuthService.saveUserData();  
           console.log('Login successful');
-          this.__Router.navigate(['/all']);
+          this.__Router.navigate(['/touristicplaces']);
         }
       },
       error: (error) => {
-        this.isLoading = false;
+        
         if (error.status === 400) {
           // Handle 400 Bad Request error
 
@@ -50,6 +50,10 @@ export class LoginComponent implements OnInit {
       }
     });
   }
+
+  //navigateToTouristicPlaces() {
+  //  this.__Router.navigate(['/touristicplaces']);
+  //}
 
   ngOnInit(): void {
   }

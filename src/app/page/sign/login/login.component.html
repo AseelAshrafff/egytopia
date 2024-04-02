@@ -14,7 +14,7 @@
                   <h3>Welcome to Egy<span class="image-letter"></span>opia</h3>
                 </div>
                 <h5>Login</h5>
-                <div   class="alert alert-info" style="width: 320px; height: 40px;">  {{error}} </div>
+                <div  *ngIf="error" class="alert alert-info" style="width: 320px; height: 40px;">  {{error}} </div>
                 <form
                   (ngSubmit)="onSubmitLogin(registerForm)"
                   [formGroup]="registerForm"
@@ -109,7 +109,8 @@
                     type="submit"
                     class="btn ezy__signup14-btn-submit mt-3"
                   >
-                    Login
+                   <span *ngIf="!isLoading"> Login</span>
+                   <i  *ngIf="isLoading"  class="fas fa-spinner fa-spin"></i>
                   </button>
                   <div class="mt-2">
                     Not a member? <a routerLink="/register">Register</a>
