@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Hotels } from '../../../hotels';
+import { HotelsService } from '../../../services/hotel/hotels.service';
 
 @Component({
   selector: 'app-hotels',
@@ -7,10 +8,15 @@ import { Hotels } from '../../../hotels';
   styleUrl: './hotels.component.css'
 })
 
-export class HotelsComponent {
+export class HotelsComponent implements OnInit {
 
-    hotels: Hotels[] = [
+  constructor(private _hotelservice: HotelsService){}
 
-      {ID:10,Name:'Saqara',Address:'26th Galala Road,Cairo',Number:+35788934,Description:''}
-    ]
+  hotels:any[]=[];
+
+  ngOnInit(): void {
+    this._hotelservice.GetHotel().subscribe(
+      {next:(response)=>{this.hotels=response.data}
+      });
+  }
 }

@@ -1,5 +1,5 @@
 import { Component} from '@angular/core';
-import { HotelsService } from '../../../services/hotels.service';
+import { HotelsService } from '../../../services/hotel/hotels.service';
 HotelsService
 @Component({
   selector: 'app-hoteldetails',
