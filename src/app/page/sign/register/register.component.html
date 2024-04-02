@@ -2,25 +2,22 @@
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-5 col-md-12 w-100">
-        <div class="ezy__signup14-form-card d-flex justify-content-center"
-        
-        >
+        <div class="ezy__signup14-form-card d-flex justify-content-center">
           <div class="row">
-            <div class="col-12 col-lg-7"  >
+            <div class="col-12 col-lg-7">
               <div
                 class="d-flex flex-column justify-content-center align-items-center text-center h-100 p-2"
-                
-                >
+              >
                 <div class="title">
                   <h3>Welcome to Egy<span class="image-letter"></span>opia</h3>
                 </div>
                 <form
-                  (ngSubmit)="onSubmit()"
+                  (ngSubmit)="onSubmit(registerForm)"
                   [formGroup]="registerForm"
                   class="mt-5"
                 >
                   <div class="form-group d-flex mb-5">
-                    <div  class="w-50 me-2">
+                    <div style="height: 35px" class="w-50 me-2">
                       <input
                         formControlName="firstName"
                         type="text"
@@ -49,20 +46,20 @@
                             registerForm.get('firstName')?.getError('minlength')
                           "
                         >
-                         Minimumlength is 3
+                          Minimumlength is 3
                         </p>
+                        
                       </div>
                     </div>
-                    <div class="w-50 " >
-                      
-                        <input
+                    <div style="height: 35px" class="w-50">
+                      <input
                         formControlName="lastName"
-                          type="text"
-                          class="form-control w-100 h-100"
-                          id="lastName"
-                          placeholder="Last Name"
-                        />
-                        <div
+                        type="text"
+                        class="form-control w-100 h-100"
+                        id="lastName"
+                        placeholder="Last Name"
+                      />
+                      <div
                         *ngIf="
                           registerForm.get('lastName')?.errors &&
                           registerForm.get('lastName')?.touched
@@ -83,17 +80,15 @@
                             registerForm.get('lastName')?.getError('minlength')
                           "
                         >
-                        Minimumlength is 3
+                          Minimumlength is 3
                         </p>
                       </div>
-                      
-                      
                     </div>
                   </div>
                   <div class="form-group position-relative mb-5">
                     <div style="height: 35px">
                       <input
-                      formControlName="email"
+                        formControlName="email"
                         type="email"
                         class="form-control"
                         id="email"
@@ -118,19 +113,24 @@
                         </p>
                         <p
                           class="m-0"
-                          *ngIf="
-                            registerForm.get('email')?.getError('email')
-                          "
-                        >
-                          
-                        </p>
+                          *ngIf="registerForm.get('email')?.getError('email')"
+                        ></p>
                       </div>
                     </div>
                   </div>
                   <div class="form-group position-relative mb-5">
                     <div>
-                      <select class="form-select" id="country">
-                        <option value="" disabled selected>
+                     
+                      <select
+                      
+                      formControlName="country"
+                        class="form-select"
+                        id="country"
+                        
+                      >
+                        <option
+                        
+                        value="" disabled selected>
                           Select Country
                         </option>
                         <option value="USA">United States</option>
@@ -167,6 +167,7 @@
                         <option value="THA">Thailand</option>
                       </select>
                       <i class="ezy__signup14-icon"></i>
+                     
                     </div>
                   </div>
                   <div
@@ -185,13 +186,12 @@
                   <div class="form-group position-relative mb-5">
                     <div style="height: 35px">
                       <input
-                      formControlName="password"
+                        formControlName="password"
                         type="password"
                         class="form-control"
                         id="password"
                         placeholder="Password"
                       />
-                      
 
                       <div
                         *ngIf="
@@ -222,7 +222,7 @@
                   <div class="form-group position-relative mb-5">
                     <div style="height: 35px">
                       <input
-                      formControlName="confirmPassword"
+                        formControlName="confirmPassword"
                         type="password"
                         class="form-control"
                         id="confirmPassword"
@@ -250,26 +250,23 @@
                     >
                   </div>
                   <button
+                    [disabled]="registerForm.invalid"
                     type="submit"
                     class="btn ezy__signup14-btn-submit mt-3"
                   >
                     Register <i class="fas fa-arrow-right"></i>
                   </button>
                   <div class="mt-2">
-                    <p class="mb-0 small">
-                      Alrelady have an account? <a href="#!">Log In</a>
+                   <p class="mb-0 small">
+                      Alrelady have an account? <a routerLink="/login">Log In</a>
                     </p>
+
                   </div>
                 </form>
               </div>
             </div>
-            <div 
-           
-            class="col-12 col-lg-5 d-none d-lg-block">
-              <div 
-             
-                class="d-flex align-items-center  h-100"
-              >
+            <div class="col-12 col-lg-5 d-none d-lg-block">
+              <div class="d-flex align-items-center h-100">
                 <img src="\assets\images\signin image.png" alt="" />
               </div>
             </div>

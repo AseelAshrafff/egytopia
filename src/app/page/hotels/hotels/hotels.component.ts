@@ -3,7 +3,7 @@ import { Hotels } from '../../../hotels';
 
 @Component({
   selector: 'app-hotels',
-  templateUrl: './hotels.component.html',
+  templateUrl:'./hotels.component.html',
   styleUrl: './hotels.component.css'
 })
 

@@ -21,11 +21,12 @@ import { HttpClientModule } from '@angular/common/http';
 import { ReactiveFormsModule } from '@angular/forms';
 import { ReservationComponent } from './page/reservation/reservation.component';
 import { HotelsCardsComponent } from './page/hotels/hotels-cards/hotels-cards.component';
+import {}
 
 
 @NgModule({
   declarations: [
-    AppComponent,
+   AppComponent,
     NavbarComponent,
     LoginComponent,
     RegisterComponent,
@@ -41,8 +42,10 @@ import { HotelsCardsComponent } from './page/hotels/hotels-cards/hotels-cards.co
     FiltersComponent,
     CardsComponent,
     UpperHotelComponent,
+
     ReservationComponent,
     HotelsCardsComponent,
+
 
 
 

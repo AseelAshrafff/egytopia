@@ -101,13 +101,18 @@
                       >You agree to our friendly
                       <a href="#!">privacy policy</a>.</label
                     >
+                   
                   </div>
                   <button
+                   [disabled]="registerForm.invalid" 
                     type="submit"
                     class="btn ezy__signup14-btn-submit mt-3"
                   >
                     Login
                   </button>
+                  <div class="mt-2">
+                    Not a member? <a routerLink="/register">Register</a>
+                  </div> 
                 </form>
               </div>
             </div>
