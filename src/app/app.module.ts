@@ -27,8 +27,7 @@ import { AuthlayoutComponent } from './authlayout/authlayout.component';
 import { BlanklayoutComponent } from './blanklayout/blanklayout.component';
 import { HotelsCardsComponent } from './page/selectedplace/hotels-cards/hotels-cards.component';
 import { SelectedplaceComponent } from './page/selectedplace/selectedplace.component';
-
-
+import { ReservationComponent } from './page/reservation/reservation.component';
 
 
 
@@ -50,6 +49,7 @@ import { SelectedplaceComponent } from './page/selectedplace/selectedplace.compo
     FiltersComponent,
     CardsComponent,
     UpperHotelComponent,
+    ReservationComponent,
     HotelsCardsComponent,
     PaymentComponent,
    ToursticplacesComponent,
@@ -59,6 +59,13 @@ import { SelectedplaceComponent } from './page/selectedplace/selectedplace.compo
    AuthlayoutComponent,
    HotelsCardsComponent,
   SelectedplaceComponent
+
+
+
+
+
+
+
   ],
   imports: [
     BrowserModule,
