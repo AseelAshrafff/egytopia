@@ -19,7 +19,7 @@ import { CardsComponent } from './page/home/cards/cards.component';
 import { UpperHotelComponent } from './page/selectedplace/upper-hotel/upper-hotel.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ReactiveFormsModule } from '@angular/forms';
-import { PaymentComponent } from './payment/payment.component';
+import { PaymentComponent } from './page/reservation/payment/payment.component';
 import { ToursticplacesComponent } from './page/home/toursticplaces/toursticplaces.component';
 import { TourguideComponent } from './page/freelancepages/tourguide/tourguide.component';
 import { CoastalplacesComponent } from './page/home/coastalplaces/coastalplaces.component';
@@ -28,12 +28,13 @@ import { BlanklayoutComponent } from './blanklayout/blanklayout.component';
 import { HotelsCardsComponent } from './page/selectedplace/hotels-cards/hotels-cards.component';
 import { SelectedplaceComponent } from './page/selectedplace/selectedplace.component';
 import { ReservationComponent } from './page/reservation/reservation.component';
+import { EndStepComponent } from './page/reservation/end-step/end-step.component';
 
 
 
 @NgModule({
   declarations: [
-   AppComponent,
+    AppComponent,
     NavbarComponent,
     LoginComponent,
     RegisterComponent,
@@ -52,13 +53,14 @@ import { ReservationComponent } from './page/reservation/reservation.component';
     ReservationComponent,
     HotelsCardsComponent,
     PaymentComponent,
-   ToursticplacesComponent,
-   CoastalplacesComponent,
-   TourguideComponent,
-   BlanklayoutComponent,
-   AuthlayoutComponent,
-   HotelsCardsComponent,
-  SelectedplaceComponent
+    ToursticplacesComponent,
+    CoastalplacesComponent,
+    TourguideComponent,
+    BlanklayoutComponent,
+    AuthlayoutComponent,
+    HotelsCardsComponent,
+    SelectedplaceComponent,
+    EndStepComponent
 
 
 

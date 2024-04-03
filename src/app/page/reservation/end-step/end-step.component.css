@@ -1,0 +1,117 @@
+.confirmation{
+
+    margin-top: 50px;
+    width: 820px;
+    height: 470px;
+     display: 
+    block;
+    left: 40px;
+    gap: 0px;
+    opacity: 0px;
+    background-color: rgba(255, 255, 255, 1);
+    border:1px solid rgb(246, 246, 246);
+    margin-bottom: 50px;
+    border-radius: 10px;
+
+}
+
+.Tablehead{
+  width: 820px;
+  height: 104px;
+  gap: 10px;
+  opacity: 0px;
+  margin-top: 50px;
+  display: flex;
+  background-color: rgba(224, 250, 239, 1);
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0.02em;
+  text-align: left;
+
+
+}
+
+.iconContainer{
+ width: 56px;
+height: 56px;
+top: 24px;
+left: 16px;
+padding: 12px ;
+gap: 0px;
+border-radius: 16px ;
+opacity: 0px;
+background-color: rgba(255, 255, 255, 1);
+margin-top: 25px;
+margin-left: 15px;
+
+}
+.Icon{
+width: 22.63px;
+height: 16.03px;
+margin-top: 6px;
+margin-left: 6px;
+text-align: center;
+gap: 0px;
+opacity: 0px;
+color: rgba(26, 178, 114, 1);
+font-size: 26px;
+
+}
+/*------------------------------*/
+p{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    width: 616px;
+    color: rgba(55, 56, 56, 1);
+
+}
+
+/*-----------Start-Body-Styling-----------------------*/
+.boxcontainer{
+    margin-left: 40px;
+    border:#fff 1px solid;
+    margin-top: 10px;
+
+}
+/*---------------------------------------------------*/
+.box h6{
+font-family: Inter;
+font-size: 14px;
+font-weight: 400;
+line-height: 16.94px;
+text-align: left;
+color: rgba(173, 183, 192, 1);
+
+}
+.box p{
+font-family: Inter;
+font-size: 16px;
+font-weight: 400;
+line-height: 19px;
+text-align: left;
+color:rgba(55, 56, 56, 1)
+
+}
+
+h4{
+height: 19px;
+gap: 0px;
+opacity: 0px;
+font-family: Inter;
+font-size: 16px;
+font-weight: 600;
+line-height: 19.36px;
+text-align: left;
+color: rgba(24, 24, 24, 1);
+}
+/*-----------------------------------*/
+
+.box{
+    border:1px solid #fff;
+    width: 200px;
+}
