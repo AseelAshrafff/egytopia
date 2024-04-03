@@ -20,7 +20,6 @@
   height: 104px;
   gap: 10px;
   opacity: 0px;
-  margin-top: 50px;
   display: flex;
   background-color: rgba(224, 250, 239, 1);
   font-family: Inter;
@@ -29,6 +28,7 @@
   line-height: 22px;
   letter-spacing: 0.02em;
   text-align: left;
+  border-radius:  10px 10px ;
 
 
 }
