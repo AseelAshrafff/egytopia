@@ -33,6 +33,8 @@ import { ToastrModule } from 'ngx-toastr';
 import { SearchPipe } from './pipes/search.pipe';
 import { EndStepComponent } from './page/reservation/end-step/end-step.component';
 import { ReservationComponent } from './page/reservation/reservation.component';
+import { BookingComponent } from './page/user/booking/booking.component';
+import { LogoutComponent } from './page/user/logout/logout.component';
 
 
 
@@ -73,7 +75,9 @@ import { ReservationComponent } from './page/reservation/reservation.component';
     AuthlayoutComponent,
     HotelsCardsComponent,
     SelectedplaceComponent,
-    EndStepComponent
+    EndStepComponent,
+    BookingComponent,
+    LogoutComponent
 
 
   ],

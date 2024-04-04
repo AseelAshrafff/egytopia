@@ -23,8 +23,7 @@
   left:150px;
   bottom: 430px;
 }
-.ImgProf
-{
+.ImgProf{
   text-align: left;
 }
 .ImgProf h4{
@@ -89,7 +88,6 @@ top: 155px;
   opacity: 0px;
   border: none;
 }
-
 .f{
   position: absolute;
   top:510px;

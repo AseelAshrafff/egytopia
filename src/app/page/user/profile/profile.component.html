@@ -1,1 +1,49 @@
 
+<section class="ezy__profile d-flex align-items-center justify-content-center">
+  <div class="total">
+    <!--Image-->
+    <div class="ImgProf">
+      <div class="pic"><img src="assets/images/me.jpg" /></div>
+      <h4>{{userName}}</h4>
+      <div class="loc-bd">
+        <h6><img src="./assets/images/loca.jpeg" />{{location}} | <img src="assets/images/cake.jpeg" />{{DB}}</h6>
+      </div>
+      <!-- Rectangle -->
+      <div class="rect"></div>
+      <!-- Personal Info -->
+      <div class="title1">
+        <h3>Personal Information</h3>
+      </div>
+      <div class="data">
+        <div class="w-50 ">
+          <label for="Name">Name</label>
+          <input type="text" [(ngModel)]="userName" class="form-control w-100 h-100" id="Name" />
+        </div> <br>
+        <div class="w-50 ">
+          <label for="DB">Date Of Birth</label>
+          <input type="date" [(ngModel)]="DB" class="form-control w-100 h-100" id="DB" />
+        </div> <br>
+        <div class="w-50 ">
+          <label for="Phone">Phone</label>
+          <input type="tel" [(ngModel)]="phone" class="form-control w-100 h-100" id="Phone"
+            placeholder="+2010001100111" />
+        </div> <br>
+        <div class="w-50 ">
+          <label for="location">Location</label>
+          <input type="location" [(ngModel)]="location" class="form-control w-100 h-100" id="DB" />
+        </div><br>
+        <button> Save </button>
+      </div>
+      <div class="But-Fav">
+        <button class="p" [routerLink]="['/profile']">Personal Info</button>
+        <button class="b" [routerLink]="['/booking']">Booking History</button>
+        <button class="f" [routerLink]="['/favorite']">Favorite</button>
+        <button class="L" [routerLink]="['/logout']">Log Out</button>
+      </div>
+    </div>
+  </div>
+  <div class="col-12 col-lg-5 d-none d-lg-block">
+    <div class="d-flex align-items-center h-100">
+    </div>
+  </div>
+</section>
