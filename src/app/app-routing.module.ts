@@ -24,6 +24,9 @@ import { authGuard } from './guards/auth.guard';
 
 import { SelectedplaceComponent } from './page/selectedplace/selectedplace.component';
 import { EndStepComponent } from './page/reservation/end-step/end-step.component';
+import { LogoutComponent } from './page/user/logout/logout.component';
+import { BookingComponent } from './page/user/booking/booking.component';
+
 
 
 
@@ -37,7 +40,7 @@ const routes: Routes = [
     {path:'', component:HomeComponent, children:[
       {path:'', redirectTo:'home', pathMatch:'full'},
 
-      
+
 
       {path:'hotel',canActivate:[authGuard] , component:HotelsComponent},
       {path:'touristicplaces', canActivate:[authGuard] , component:ToursticplacesComponent},
@@ -48,7 +51,9 @@ const routes: Routes = [
     {path:'tourguide', canActivate:[authGuard] ,component:TourguideComponent},
     {path:'hoteldetails/:id', canActivate:[authGuard] ,component:HoteldetailsComponent},
     {path:'favorite', canActivate:[authGuard] ,component:FavoritesComponent},
-    {path:'profile', canActivate:[authGuard] ,component:ProfileComponent},
+    {path:'profile' , canActivate:[authGuard] ,component:ProfileComponent},
+    {path:'logout' , canActivate:[authGuard],component:LogoutComponent},
+    {path:'booking' , canActivate:[authGuard],component:BookingComponent},
     {path:'experience', canActivate:[authGuard] ,component:ExperienceComponent},
     {path:'payment', canActivate:[authGuard] ,component:PaymentComponent},
     {path:'endstep', canActivate:[authGuard] ,component:EndStepComponent},
@@ -67,7 +72,7 @@ const routes: Routes = [
   {path:'upper-hotel', canActivate:[authGuard] ,component: UpperHotelComponent },
   {path:'payment', canActivate:[authGuard] ,component: PaymentComponent},
  {path:'reservation', canActivate:[authGuard] ,component: ReservationComponent },
- 
+
 
   {path:'**', component:NotfoundComponent}
 

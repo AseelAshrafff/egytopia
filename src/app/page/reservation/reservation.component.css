@@ -375,6 +375,7 @@ color: rgba(55, 56, 56, 1);
     margin-bottom: 20px;
     opacity: 0px;
     color: #fff;
+    border:1px solid #5CC1DA;
     background: rgba(87, 172, 193, 1);
 
 }
