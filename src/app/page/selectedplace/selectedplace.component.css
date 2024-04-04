@@ -1,10 +1,20 @@
 
 section {
-    display: block;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+    display: flex;
+    justify-content: center;   
+    text-align: center; 
+    margin-top: 30px;
     margin: bottom 10px;
-    margin-left: 50px;
-    margin-right: 50px;
+    margin-left: 10px;
+    /* gap: 20px; */
+}
+
+.navcontainer{
+ display: flex;
+ margin-bottom: 30px;
+}
+.container{
+ margin: 70px;   
+ justify-content: right;
+    
 }

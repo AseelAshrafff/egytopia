@@ -13,17 +13,17 @@ import { FavoritesComponent } from './page/user/favorites/favorites.component';
 import { ProfileComponent } from './page/user/profile/profile.component';
 import {UpperHotelComponent} from './page/selectedplace/upper-hotel/upper-hotel.component';
 import {HotelsCardsComponent}from './page/selectedplace/hotels-cards/hotels-cards.component'
-import { PaymentComponent } from './payment/payment.component';
+import { PaymentComponent } from './page/reservation/payment/payment.component';
 import { ReservationComponent } from './page/reservation/reservation.component';
 import { AuthlayoutComponent } from './authlayout/authlayout.component';
 import { TourguideComponent } from './page/freelancepages/tourguide/tourguide.component';
 import { CoastalplacesComponent } from './page/home/coastalplaces/coastalplaces.component';
 import { ToursticplacesComponent } from './page/home/toursticplaces/toursticplaces.component';
 import { BlanklayoutComponent } from './blanklayout/blanklayout.component';
-
 import { authGuard } from './guards/auth.guard';
 
 import { SelectedplaceComponent } from './page/selectedplace/selectedplace.component';
+import { EndStepComponent } from './page/reservation/end-step/end-step.component';
 
 
 
@@ -51,6 +51,8 @@ const routes: Routes = [
     {path:'profile', canActivate:[authGuard] ,component:ProfileComponent},
     {path:'experience', canActivate:[authGuard] ,component:ExperienceComponent},
     {path:'payment', canActivate:[authGuard] ,component:PaymentComponent},
+    {path:'endstep', canActivate:[authGuard] ,component:EndStepComponent},
+
   ]},
   //----------------------------- auth layout ---------------------------------------------
   {path:'', component:AuthlayoutComponent,children:[
@@ -65,6 +67,7 @@ const routes: Routes = [
   {path:'upper-hotel', canActivate:[authGuard] ,component: UpperHotelComponent },
   {path:'payment', canActivate:[authGuard] ,component: PaymentComponent},
  {path:'reservation', canActivate:[authGuard] ,component: ReservationComponent },
+ 
 
   {path:'**', component:NotfoundComponent}
 
