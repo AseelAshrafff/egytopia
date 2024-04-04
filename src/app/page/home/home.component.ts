@@ -3,7 +3,7 @@ import { HomeserviceService } from '../../services/home/homeservice.service';
 
 @Component({
   selector: 'app-home',
-  templateUrl: './home.component.html',
+  templateUrl:'./home.component.html',
   styleUrl: './home.component.css'
 })
 export class HomeComponent {

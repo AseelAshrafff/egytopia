@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { HotelsService } from '../../services/hotel/hotels.service';
+import { Ihotel } from '../../interfaces/ihotel';
 
 @Component({
   selector: 'app-navbar',
@@ -6,12 +8,19 @@ import { Component } from '@angular/core';
   styleUrl: './navbar.component.css'
 })
 export class NavbarComponent {
-  showTextField: boolean = false;
-  data: string[] = ["Apple", "Banana", "Orange", "Mango", "Pineapple"];
-  searchQuery: string = '';
-  searchResults: string[] = [];
-  performSearch() {
-    this.showTextField = this.searchQuery.length > 0; // عرض حقل النص إذا كانت قيمة البحث غير فارغة
-    this.searchResults = this.data.filter(item => item.toLowerCase().includes(this.searchQuery.toLowerCase()));
-  }
+ constructor(private _hotelservice:HotelsService){
+ 
+ }
+ SearchTerm:string='';
+ hotels:Ihotel[]=[];
+
+//  ngOnInit(): void {
+//   this._hotelservice.GetHotel(1).subscribe(
+//     {next:(response)=>{console.log(response)
+//     this.hotels=response;
+//     console.log(this.hotels);
+//     }
+//     });
+//   }
 }
+

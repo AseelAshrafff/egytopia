@@ -46,7 +46,7 @@ const routes: Routes = [
     ]},
     {path:'freelance', canActivate:[authGuard] ,component:FreelanceComponent},
     {path:'tourguide', canActivate:[authGuard] ,component:TourguideComponent},
-    {path:'hoteldetails', canActivate:[authGuard] ,component:HoteldetailsComponent},
+    {path:'hoteldetails/:id', canActivate:[authGuard] ,component:HoteldetailsComponent},
     {path:'favorite', canActivate:[authGuard] ,component:FavoritesComponent},
     {path:'profile', canActivate:[authGuard] ,component:ProfileComponent},
     {path:'experience', canActivate:[authGuard] ,component:ExperienceComponent},

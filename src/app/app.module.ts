@@ -18,7 +18,7 @@ import { FiltersComponent } from './page/home/filters/filters.component';
 import { CardsComponent } from './page/home/cards/cards.component';
 import { UpperHotelComponent } from './page/selectedplace/upper-hotel/upper-hotel.component';
 import { HttpClientModule } from '@angular/common/http';
-import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { PaymentComponent } from './payment/payment.component';
 import { ToursticplacesComponent } from './page/home/toursticplaces/toursticplaces.component';
 import { TourguideComponent } from './page/freelancepages/tourguide/tourguide.component';
@@ -28,7 +28,10 @@ import { BlanklayoutComponent } from './blanklayout/blanklayout.component';
 import { HotelsCardsComponent } from './page/selectedplace/hotels-cards/hotels-cards.component';
 import { SelectedplaceComponent } from './page/selectedplace/selectedplace.component';
 import { ReservationComponent } from './page/reservation/reservation.component';
-
+import { CommonModule } from '@angular/common';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ToastrModule } from 'ngx-toastr';
+import { SearchPipe } from './pipes/search.pipe';
 
 
 @NgModule({
@@ -58,7 +61,10 @@ import { ReservationComponent } from './page/reservation/reservation.component';
    BlanklayoutComponent,
    AuthlayoutComponent,
    HotelsCardsComponent,
-  SelectedplaceComponent
+  SelectedplaceComponent,
+  SearchPipe,
+   
+
 
 
 
@@ -71,7 +77,9 @@ import { ReservationComponent } from './page/reservation/reservation.component';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    ReactiveFormsModule
+    FormsModule,
+    ReactiveFormsModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]

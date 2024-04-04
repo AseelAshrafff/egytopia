@@ -1,6 +1,7 @@
 .nav-link {
     position: relative;
     text-decoration: none;
+    margin-right: 50px;
   }
   .nav-link::after {
     content: ''; /* إنشاء محتوى فارغ */
