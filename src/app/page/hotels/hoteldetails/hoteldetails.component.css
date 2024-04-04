@@ -5,19 +5,26 @@
    height: 376px;
    margin-right: 10px;
 }
+.hotel1{
+ width: 660px;   
+ height: 376px;
+}
 .hotel2{
     width: 347px;
+    height: 376px;
 }
+
 .hotel3{
     width: 347px;
     height: 184px;
-    margin-left: 12px;
+    margin-left: 20px;
+    
 }
 .hotel4{
     margin-top:8px;
     width: 347px;
     height: 184px;
-    margin-left: 12px;
+    margin-left: 20px;
 }
 .photocontainer{
     display:flex ;
@@ -49,7 +56,7 @@ margin-top: 30px;
 }
 .card{
 width: 430px;
-height: 600px;
+height: 500px;
 margin-top:70px;
 box-shadow:2px 2px 2px 2px #0000001A;
 border-radius: 40px;
