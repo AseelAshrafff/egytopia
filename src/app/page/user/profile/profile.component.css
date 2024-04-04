@@ -16,64 +16,36 @@
   display: flex;
   flex-direction: row;
 }
-.pic img{
-  border-radius: 60%;
-  width: 15%;
-  position: absolute;
-  left:150px;
-  bottom: 430px;
-}
+/* left side */
 .ImgProf
 {
   text-align: left;
 }
-.ImgProf h4{
-  position: absolute;
-  bottom:380px;
-  left: 190px;
+.pic img{
+  border-radius: 60%;
+  width:20%;
+  position: relative;
+    left: 180px;
+    top: 0px;
 }
-.rect{
-width: 2px;
-height: 500px;
-background-color:#EAFBFF;
-position: absolute;
-left: 450px;
-top: 155px;
+.ImgProf h4{
+  position: relative;
+  top:10px;
+  left: 200px;
 }
 .loc-bd h6{
   font-size: 14px;
-  position: absolute;
-  bottom:350px;
-  left: 180px;
+  position: relative;
+  top:10px;
+  left: 190px;
 }
 .loc-bd img{
-  width: 6%;
-  margin-bottom: 2%;
+  width: 1.2%;
+  margin-bottom: 1%;
 }
-.title1 h3{
-  font-size: 25px;
-  text-align: center;
-  position: absolute;
-  left: 500px;
-  top: 180px;
-}
-.data{
-  position: absolute;
-  top: 240px;
-  left: 500px;
-}
-label{
-  width: 700px;
-  text-align: left;
-}
-.data button{
-  padding: 10px;
-  width: 300px;
-  color: #ffffff;
+.But-Fav :hover{
   background-color: #57ACC1;
-  margin-left: 4%;
-  border: none;
-  border-radius: 4px;
+  color: #fff;
 }
 .p{
   position: absolute;
@@ -88,10 +60,6 @@ label{
   border-radius: 8px ;
   opacity: 0px;
   border: none;
-}
-.But-Fav :hover{
-  background-color: #57ACC1;
-  color: #fff;
 }
 .b{
   position: absolute;
@@ -135,6 +103,42 @@ label{
   opacity: 0px;
   border: none;
 }
+/* rectangle */
+.rect{
+  width: 2px;
+  height: 500px;
+  background-color:#EAFBFF;
+  position: absolute;
+  left: 450px;
+  top: 155px;
+  }
+  /* right side */
+.title1 h3{
+  font-size: 25px;
+  text-align: center;
+  position: absolute;
+  left: 500px;
+  top: 180px;
+}
+.data{
+  position: absolute;
+  top: 240px;
+  left: 500px;
+}
+label{
+  width: 700px;
+  text-align: left;
+}
+.data button{
+  padding: 10px;
+  width: 300px;
+  color: #ffffff;
+  background-color: #57ACC1;
+  margin-left: 4%;
+  border: none;
+  border-radius: 4px;
+}
+
 @media screen and (min-width:0px) and (max-width:600px) {
   .total{
     flex-direction: column;
