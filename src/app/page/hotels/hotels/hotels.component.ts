@@ -16,6 +16,7 @@ export class HotelsComponent implements OnInit {
   }
   SearchTerm:string='';
   hotels:Ihotel[]=[];
+  term:string='';
 
   //--------------pagination----------------
   DisplayHotel(PageNum:number){
