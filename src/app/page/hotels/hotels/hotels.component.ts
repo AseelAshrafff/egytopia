@@ -8,9 +8,7 @@ import { Ihotel } from '../../../interfaces/ihotel';
   templateUrl:'./hotels.component.html',
   styleUrl: './hotels.component.css'
 })
-
 export class HotelsComponent implements OnInit {
-
   constructor(private _hotelservice: HotelsService){
    this. DisplayHotel(1);
   }
@@ -29,7 +27,6 @@ export class HotelsComponent implements OnInit {
   }
 //------------------------------------------------
   ngOnInit(): void {
-    
     this._hotelservice.GetHotel(1).subscribe(
       {next:(response)=>{console.log(response)
       this.hotels=response;

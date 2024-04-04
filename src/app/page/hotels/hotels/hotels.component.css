@@ -5,6 +5,7 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    min-width:300px;
 }
 .card {
     margin-left: 30px;
@@ -54,14 +55,14 @@ margin-top: 5px;
 width: 200px;
 transition: border-color 0.3s;
 color: #C89666;
-height: 45px;
+height: 40px;
 }
 .pagination li{
 background-color:#C89666;
 border-color: #EFEFEF;
 color: #EFEFEF;
 }
-
-.pagination{
-margin-top: auto;
+.all{
+min-height: 100vh;
 }
+

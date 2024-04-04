@@ -1,11 +1,13 @@
 <app-filters></app-filters>
+<!------------------------------------ -------------------------------------->
 <div class="search">
   <input type="" id="searchField" placeholder="search here..."   
   [(ngModel)]="SearchTerm"
   />
+<!------------------------------------ --------------------------------------->
 </div>
-
-<div class="cardcontainer">
+<section class="all">
+  <div class="cardcontainer">
     <div class="card "  *ngFor="let hotel of hotels | search:SearchTerm">
       <img src="/assets/images/card1.png" class="card-img-top" alt="...">
       <div class="card-body">
@@ -17,20 +19,23 @@
       </div>
     </div>
   </div>
-   <!------------------------- pagination ------------------------------------------->
-  <ul class="pagination pagination-lg mt-auto" >
-    <li (click)='DisplayHotel(1)' class="page-item active page-link" >
-      1
-    </li>
-    <li (click)='DisplayHotel(2)' class="page-item active page-link" >
-      2
-    </li>
-    <li (click)='DisplayHotel(3)' class="page-item active page-link" >
-      3
-    </li>
-  </ul>
+<!------------------------------ pagination --------------------------------------->
+    <div class="mt-auto" *ngIf="hotels!=null">
+      <ul class="pagination pagination-lg "  >
+        <li (click)='DisplayHotel(1)' class="page-item active page-link" >
+          1
+        </li>
+        <li (click)='DisplayHotel(2)' class="page-item active page-link" >
+          2
+        </li>
+        <li (click)='DisplayHotel(3)' class="page-item active page-link" >
+          3
+        </li>
+      </ul>
+    </div>
+</section>
 
-    <!------------------------------- ------------------------------------>
+  <!------------------------------- ------------------------------------>
   <!-- <div class="card " style="width: 18rem;">
       <img src="/assets/images/card2.jpg" class="card-img-top" alt="...">
       <div class="card-body">

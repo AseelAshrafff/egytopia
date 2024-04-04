@@ -8,16 +8,19 @@
 .hotel1{
  width: 660px;   
  height: 376px;
+ display: grid;
 }
 .hotel2{
     width: 347px;
     height: 376px;
+    display: grid;
 }
 
 .hotel3{
     width: 347px;
     height: 184px;
     margin-left: 20px;
+    display: grid;
     
 }
 .hotel4{
@@ -36,7 +39,10 @@
     margin-left:30px;
 }
 .hotelname{
-margin-top: 30px;   
+margin-top: 30px;  
+}
+.hotelname h3{
+    font-weight: 600; 
 }
 .hotelname p{
 margin-top: 30px;    
@@ -53,6 +59,7 @@ margin-top: 30px;
 .overview h4{
     font-weight: 600;
     margin-top: 40px;
+
 }
 .card{
 width: 430px;
@@ -65,6 +72,7 @@ border-radius: 40px;
     width: 600px;
     height: 172px;
     margin-left: 70px;
+   display: grid;
 }
 .hotelname{
     margin-left: 70px; 

@@ -18,5 +18,4 @@ export class HotelsService {
    GetHotelDetails(id:string):Observable<any>{
     return this._httpclient.get(`https://localhost:7047/api/Hotel/GetHotel?id= ${id}`);
    }
- 
 }

@@ -17,21 +17,20 @@
    .filter2{
     position: absolute;
     width: 120px;
-    height: 50px;
-    /* right: 1300px; */
-    left: -100px;
+    height: 40px;
+    left: -50px;
    }
    .filter3{
      position: absolute;
-     left: 350px;
+     left: 300px;
      width: 200px;
-     height: 50px;
+     height: 40px;
    }
    .filter4{
     position: absolute;
-    left: 900px;
-     width: 200px;
-     height: 50px;
+    left: 800px;
+    width: 200px;
+    height: 40px;
    }
    button.active{
      background-color: #E7B88A;
@@ -44,8 +43,8 @@
  
   .circle{
     background-color: #E7B88A;
-    width: 45px;
-    height: 48px;
+    width: 38px;
+    height: 38px;
     border-radius:50%;
     position: relative;
     right:5px;
@@ -66,15 +65,15 @@
     margin-top: 8px;
    }
    .text{
-    margin-top:10px;
+    margin-top:7px;
     margin-left:7px;
     }
     .text1{
-      margin-top: 10px;  
+      margin-top: 7px;  
       margin-left:11px;
      }
      .text2{
-      margin-top: 10px;  
+      margin-top: 7px;  
       margin-left:11px;
      }
      
