@@ -105,10 +105,10 @@ height: 70px;
 .card-container {
   
     position: absolute;
-    left: 1150px;
+    left: 1200px;
     top: 130px;
     margin-right: 20px;
-    width: 349px;
+    width: 350px;
     height: 550px;
     gap: 0px;
     border-radius: 16px;
@@ -336,7 +336,7 @@ color: rgba(55, 56, 56, 1);
   }
   .card-container {
     position: static;
-    width: 100%;
+    width: 40%;
     margin: 20px;
   }
 }
@@ -350,10 +350,10 @@ color: rgba(55, 56, 56, 1);
   }
   .card-container {
     position: absolute;
-    left: 960px;
+    left: 1200px;
     top: 130px;
     margin-right: 20px;
-    width: 300px;
+    width: 320px;
     height: 550px;
     gap: 0px;
     border-radius: 16px;
