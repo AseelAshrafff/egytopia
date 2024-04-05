@@ -1,0 +1,30 @@
+<mat-horizontal-stepper linear>
+    <mat-step label="Romes&Dates">
+        <!-- Include your custom component by its selector -->
+
+        <app-hoteldetails></app-hoteldetails>
+
+        <button mat-button matStepperNext>Next</button>
+    </mat-step>
+
+    <mat-step label="Extras ">
+
+        <button mat-button matStepperPrevious>Back</button>
+        <app-reservation></app-reservation>
+        <button mat-button matStepperNext>Next</button>
+
+    </mat-step>
+    <mat-step label="Payment">
+        <button mat-button matStepperPrevious>Back</button>
+        <app-payment></app-payment>
+        <button mat-button matStepperNext>Next</button>
+    </mat-step>
+
+
+    <!------------Reservation Confirme------------------------->
+    <mat-step label="Confirming ">
+        <app-end-step></app-end-step>
+        <button mat-button matStepperPrevious>Back</button>
+    </mat-step>
+
+</mat-horizontal-stepper>

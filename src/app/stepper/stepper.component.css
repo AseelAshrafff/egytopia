@@ -1,0 +1,35 @@
+/* Stepper container */
+mat-horizontal-stepper {
+    background-color: #fff; /* Change to match your desired background color */
+  }
+  
+  /* Step labels */
+  ::ng-deep .mat-step-label {
+    color: #000; /* Change to match your desired label color */
+  }
+  
+  /* Active step label */
+  ::ng-deep .mat-step-label-active {
+    color: #1e88e5; /* Change to match your desired active label color */
+  }
+  
+  /* Completed step icon */
+  ::ng-deep .mat-step-icon-selected {
+    color: #4caf50; /* Change to match your desired completed icon color */
+  }
+  
+  /* Lines between steps */
+  ::ng-deep .mat-stepper-horizontal-line {
+    border-top-color: #4caf50; /* Change to match your desired line color */
+  }
+  
+  /* Step header container */
+  ::ng-deep .mat-horizontal-stepper-header-container {
+    justify-content: space-between;
+  }
+  
+  /* Buttons */
+  button[mat-button] {
+    color: #1e88e5; /* Change to match your desired button color */
+    margin: 8px; /* Adjust spacing around buttons */
+  }

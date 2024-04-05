@@ -26,6 +26,7 @@ import { SelectedplaceComponent } from './page/selectedplace/selectedplace.compo
 import { EndStepComponent } from './page/reservation/end-step/end-step.component';
 import { LogoutComponent } from './page/user/logout/logout.component';
 import { BookingComponent } from './page/user/booking/booking.component';
+import { StepperComponent } from './stepper/stepper.component';
 
 
 
@@ -57,6 +58,7 @@ const routes: Routes = [
     {path:'experience', canActivate:[authGuard] ,component:ExperienceComponent},
     {path:'payment', canActivate:[authGuard] ,component:PaymentComponent},
     {path:'endstep', canActivate:[authGuard] ,component:EndStepComponent},
+    {path:'stepper',canActivate:[authGuard] ,component:StepperComponent}
 
   ]},
   //----------------------------- auth layout ---------------------------------------------

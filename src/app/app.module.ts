@@ -35,6 +35,9 @@ import { EndStepComponent } from './page/reservation/end-step/end-step.component
 import { ReservationComponent } from './page/reservation/reservation.component';
 import { BookingComponent } from './page/user/booking/booking.component';
 import { LogoutComponent } from './page/user/logout/logout.component';
+import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
+import { StepperComponent } from './stepper/stepper.component';
+import { MatStepperModule } from '@angular/material/stepper';
 
 
 
@@ -77,7 +80,8 @@ import { LogoutComponent } from './page/user/logout/logout.component';
     SelectedplaceComponent,
     EndStepComponent,
     BookingComponent,
-    LogoutComponent
+    LogoutComponent,
+    StepperComponent
 
 
   ],
@@ -87,9 +91,12 @@ import { LogoutComponent } from './page/user/logout/logout.component';
     HttpClientModule,
     FormsModule,
     ReactiveFormsModule,
+    MatStepperModule
 
   ],
-  providers: [],
+  providers: [
+    provideAnimationsAsync()
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
