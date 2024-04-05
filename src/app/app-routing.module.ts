@@ -66,7 +66,7 @@ const routes: Routes = [
   ]},
 // ------------------------------ not found---------------------------------------------
 
-  // {path:'**', component:NotfoundComponent},
+  {path:'**', component:NotfoundComponent},
   {path:'selectedplace/:id', canActivate:[authGuard] ,component:SelectedplaceComponent},
   {path:'payment', canActivate:[authGuard] ,component: PaymentComponent},
  {path:'reservation', canActivate:[authGuard] ,component: ReservationComponent },

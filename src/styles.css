@@ -1,18 +1,78 @@
-
+@import 'https://fonts.googleapis.com/icon?family=Material+Icons';
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
-:root{
-    --bg-main:#FFFFFF;
+
+:root {
+    --bg-main: #FFFFFF;
     --font-main: "Inter", sans-serif;
 }
-body{
-    background-color:var(--bg-main)  ;
-    font-family:var(--font-main);
+
+body {
+    background-color: var(--bg-main);
+    font-family: var(--font-main);
 }
 
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+mat-horizontal-stepper {
+    background-color: #fff;
+
+    ::ng-deep .mat-step-label {
+        color: #000;
+    }
+    ::ng-deep .mat-step-label-selected{
+        color:#4caf50;
+    }
+
+
+    ::ng-deep .mat-step-label-active {
+        color: #4caf50;
+    }
+
+    ::ng-deep .mat-step-icon-selected {
+        border-radius: 2px;
+        background-color: #3795e8;
+
+    }
+    ::ng-deep .mat-step-icon-active {
+        color: #fff;
+        border-radius: 2px;
+        /* background-color: #4caf50; */
+    }
+
+
+
+    ::ng-deep .mat-stepper-horizontal-line {
+        border-top-color: #4caf50;
+    }
+
+
+    ::ng-deep .mat-horizontal-stepper-header-container {
+        justify-content: space-between;
+    }
+
+    button[mat-button] {
+        color: #1e88e5;
+        margin: 8px;
+    }
+
+    ::ng-deep .mat-step-icon,
+    ::ng-deep .mat-step-icon-state {
+      border-radius: 4px;
+        background: rgba(234, 251, 255, 1);
+        border: 1px solid rgba(234, 251, 255, 1); 
+        box-shadow: 4px 15px 64px 0px rgba(169, 206, 244, 0.22);
+       
+      
+    
+    }
   
 
-
-
-
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+}

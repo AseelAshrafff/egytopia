@@ -38,7 +38,7 @@ import { StepperComponent } from './stepper/stepper.component';
 import { MatStepperModule } from '@angular/material/stepper';
 import { CoastalSearchPipePipe } from './pipes/coastal-search-pipe.pipe';
 import { TouristicSearchPipePipe } from './pipes/touristic-search-pipe.pipe';
-
+import { MatIconModule } from '@angular/material/icon';
 
 
 @NgModule({
@@ -79,6 +79,7 @@ import { TouristicSearchPipePipe } from './pipes/touristic-search-pipe.pipe';
     StepperComponent,
     CoastalSearchPipePipe,
     TouristicSearchPipePipe,
+  
   ],
   imports: [
     BrowserModule,
@@ -86,7 +87,9 @@ import { TouristicSearchPipePipe } from './pipes/touristic-search-pipe.pipe';
     HttpClientModule,
     FormsModule,
     ReactiveFormsModule,
-    MatStepperModule
+    MatStepperModule,
+    MatIconModule,
+    
 
   ],
   providers: [

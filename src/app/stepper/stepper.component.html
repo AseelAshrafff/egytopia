@@ -1,30 +1,40 @@
 <mat-horizontal-stepper linear>
-    <mat-step label="Romes&Dates">
-        <!-- Include your custom component by its selector -->
-
-        <app-hoteldetails></app-hoteldetails>
-
-        <button mat-button matStepperNext>Next</button>
+    <mat-step label="Rooms & Dates" [completed]="isRoomsDatesCompleted" [editable]="isRoomsDatesEditable">
+      <app-hoteldetails></app-hoteldetails>
+      <ng-template matStepperIcon="edit">
+        <mat-icon>edit</mat-icon>
+      </ng-template>
+      <ng-template matStepperIcon="done">
+        <mat-icon>done</mat-icon>
+      </ng-template>
+      <button mat-button matStepperNext>Next</button>
     </mat-step>
-
-    <mat-step label="Extras ">
-
-        <button mat-button matStepperPrevious>Back</button>
-        <app-reservation></app-reservation>
-        <button mat-button matStepperNext>Next</button>
-
+    <mat-step label="Extras" [completed]="isExtrasCompleted" [editable]="isExtrasEditable">
+      <app-reservation></app-reservation>
+      <ng-template matStepperIcon="edit">
+        <mat-icon>edit</mat-icon>
+      </ng-template>
+      <ng-template matStepperIcon="done">
+        <mat-icon>done</mat-icon>
+      </ng-template>
     </mat-step>
-    <mat-step label="Payment">
-        <button mat-button matStepperPrevious>Back</button>
-        <app-payment></app-payment>
-        <button mat-button matStepperNext>Next</button>
+    <mat-step label="Payment" [completed]="isPaymentCompleted" [editable]="isPaymentEditable">
+      <app-payment></app-payment>
+      <ng-template matStepperIcon="edit">
+        <mat-icon>edit</mat-icon>
+      </ng-template>
+      <ng-template matStepperIcon="done">
+        <mat-icon>done</mat-icon>
+      </ng-template>
     </mat-step>
-
-
-    <!------------Reservation Confirme------------------------->
-    <mat-step label="Confirming ">
-        <app-end-step></app-end-step>
-        <button mat-button matStepperPrevious>Back</button>
+    <mat-step label="Confirming" [completed]="isConfirmingCompleted" [editable]="isConfirmingEditable">
+      <app-end-step></app-end-step>
+      <ng-template matStepperIcon="edit">
+        <mat-icon>edit</mat-icon>
+      </ng-template>
+      <ng-template matStepperIcon="done">
+        <mat-icon>done</mat-icon>
+      </ng-template>
     </mat-step>
-
-</mat-horizontal-stepper>
+  </mat-horizontal-stepper>
+  
