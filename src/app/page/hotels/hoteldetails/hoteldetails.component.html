@@ -14,13 +14,17 @@
             <img class="hotel4" src="/assets/images/hotel4.jpg" alt="">     
         </div>  
 </div>
-<!--------------------------------------hotel detailes ------------------------------------->
+<!--------------------------------------hotel details ------------------------------------->
 <div class="">
     <div  class="row">
         <div class="col-8 ">
 <!--------------------------------------hotel name ------------------------------------->
             <div class="hotelname" >
-            <h3>{{hotelDetails.name}}</h3>
+                    <h3>{{hotelDetails.name}}</h3>
+                    <div class="rating-stars">
+                        <span *ngFor="let star of stars" class="fa fa-star" [class.filled]="star <=rating"></span>
+                    </div>
+           
             <div class="location">
                 <img src="/assets/images/location.png" alt="">
                 <p>{{hotelDetails.location}}</p>
@@ -166,4 +170,4 @@
 </div>
     </div>
 </div>
-</div>
+ </div>

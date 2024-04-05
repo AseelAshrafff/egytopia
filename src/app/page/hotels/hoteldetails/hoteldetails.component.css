@@ -49,12 +49,17 @@ margin-top: 30px;
 }
 .location{
     display: flex;
+    
 }
 .location img{
     width: 18px;
     height: 21.73px;
-    margin-top: 30px;
+    margin-top: 10px;
     margin-right:6px;
+}
+.location p{
+margin-bottom: 10px;
+
 }
 .overview h4{
     font-weight: 600;
@@ -271,7 +276,6 @@ font-family:  "Mulish", sans-serif;
  width: 685px;
 }
 .first{
-
 color: #1C2B38; 
 font-weight: 700; 
 font-size: 15px;
@@ -280,3 +284,10 @@ font-size: 15px;
 font-weight: 400;
 color: #495560;
 }
+.rating-stars{
+/* color: #F8BE12; */
+margin-top: 5px;
+}
+.fa-star.filled {
+    color: gold;
+  }

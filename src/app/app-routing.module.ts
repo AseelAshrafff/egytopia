@@ -11,8 +11,6 @@ import { ExperienceComponent } from './page/experiencepages/experience/experienc
 import { FreelanceComponent } from './page/freelancepages/freelance/freelance.component';
 import { FavoritesComponent } from './page/user/favorites/favorites.component';
 import { ProfileComponent } from './page/user/profile/profile.component';
-import {UpperHotelComponent} from './page/selectedplace/upper-hotel/upper-hotel.component';
-import {HotelsCardsComponent}from './page/selectedplace/hotels-cards/hotels-cards.component'
 import { PaymentComponent } from './page/reservation/payment/payment.component';
 import { ReservationComponent } from './page/reservation/reservation.component';
 import { AuthlayoutComponent } from './authlayout/authlayout.component';
@@ -69,9 +67,7 @@ const routes: Routes = [
 // ------------------------------ not found---------------------------------------------
 
   // {path:'**', component:NotfoundComponent},
-  {path:'selectedplace', canActivate:[authGuard] ,component:SelectedplaceComponent},
-  {path:'hotels-cards', canActivate:[authGuard] ,component:HotelsCardsComponent},
-  {path:'upper-hotel', canActivate:[authGuard] ,component: UpperHotelComponent },
+  {path:'selectedplace/:id', canActivate:[authGuard] ,component:SelectedplaceComponent},
   {path:'payment', canActivate:[authGuard] ,component: PaymentComponent},
  {path:'reservation', canActivate:[authGuard] ,component: ReservationComponent },
 

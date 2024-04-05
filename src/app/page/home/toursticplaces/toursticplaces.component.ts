@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { TouristicservicesService } from '../../../services/touristic/touristicservices.service';
+import { ITouristic } from '../../../interfaces/i-touristic';
 
 @Component({
   selector: 'app-toursticplaces',
@@ -11,12 +12,13 @@ export class ToursticplacesComponent implements OnInit {
 
 constructor(private _touristicservice:TouristicservicesService){}
 
-
-touristicplaces:any[]=[];
+term:string=''
+touristicplaces:ITouristic[]=[];
 
 ngOnInit(): void {
  this._touristicservice.GetTouristicPlace().subscribe({
-  next:(response)=>{this.touristicplaces=response.data}
+  next:(response)=>{console.log(response)
+    this.touristicplaces=response}
  }) 
 }
 }

@@ -18,3 +18,232 @@ section {
  justify-content: right;
     
 }
+.container {
+    justify-content: center;
+}
+/* <!----------------gride container------------------------------> */
+.grid-container {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 10px;
+    margin-left: 20px;
+    margin-bottom: 25px;
+    margin-top: 35px;
+    margin-left: 35px;
+    margin-right: 35px;
+    justify-content: center;
+    align-items: center;
+}
+/* <!---------- grid item----------------------> */
+.grid-item {
+    width: auto;
+    height: 200px;
+    /* Adjust the height as needed */
+}
+
+.grid-item-1 {
+    grid-column: span 6;
+    width: 550px;
+    height: 373px;
+    gap: 0px;
+    margin-left: 5px;
+    margin-right: 5px;
+
+    border-radius: 16px;
+    opacity: 0px;
+}
+
+.grid-item-2 {
+    grid-column: span 3;
+    width: 347px;
+    height: 376px;
+    margin-left: 5px;
+    margin-right: 5px;
+    gap: 0px;
+    border-radius: 16px;
+    opacity: 0px;
+
+}
+
+.grid-item-3,
+.grid-item-4 {
+    grid-column: span 3;
+    /* height: 100px; */
+    width: 290px;
+    height: 180px;
+    margin-bottom: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    gap: 0px;
+    align-items: end;
+    border-radius: 16px;
+    opacity: 0px;
+
+    /* Half the height of the first two images */
+}
+
+
+h2 {
+    margin-top: 10px;
+    margin-left: 5px;
+    opacity: 0px;
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 29.05px;
+    letter-spacing: 0.01em;
+    text-align: left;
+    color: rgba(24, 24, 24, 1);
+
+}
+
+.subInfo {
+    margin-left: 17px;   
+    width: Fixed (437px)px;
+    height: Hug (100px)px;
+    opacity: 0px;
+    justify-content: left;
+}
+
+
+.Location {
+
+    gap: 0px;
+    opacity: 0px;
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16.94px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    color: rgba(51, 51, 51, 1);
+
+}
+
+.locIcon {
+    margin-right: 10px;
+    gap: 0px;
+    opacity: 0px;
+    color: rgba(92, 193, 218, 1);
+    text-align: left;
+}
+p{
+    margin-left: 5px;
+    margin-top: 5px;
+    text-align: left;
+}
+
+.content {
+    margin-top: 30px;
+    margin-left: 10px;
+    gap: 0px;
+    opacity: 0px;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    color: rgba(79, 79, 79, 1);
+    width: 740px;
+}
+
+.ContLeft{
+    text-align: left;
+    margin-left: 3px;
+}
+.container {
+    display: flex;
+    flex-wrap:wrap;
+    gap: 10px;
+
+}
+
+h3 {
+    width: 186px;
+    height: 29px;
+    margin-left: 10px;
+    gap: 0px;
+    opacity: 0px;
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 29.05px;
+    text-align: left;
+    color: rgba(24, 24, 24, 1);
+        
+
+}
+
+
+.card {
+    width: 270px;
+    height: 420px;
+    border-radius: 24px;
+    opacity: 0px;
+    border: 1px solid rgba(239, 239, 239, 1);
+    box-shadow: 15px 15px 15px rgba(169, 206, 244, 0.22);
+    margin-top: 25px;
+    margin-bottom: 30px;
+    margin-right: 10px;
+}
+
+
+.card img {
+
+
+    width: 90%;
+    object-fit: cover;
+    border-radius: 16px;
+    object-position: center;
+    margin-top: 15px;
+    margin-left: 15px;
+    opacity: 0px;
+    gap: 0px;
+}
+
+.card-title {
+    width: 226px;
+    height: 44px;
+    gap: 0px;
+    margin-bottom: 25px;
+    opacity: 0px;
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+    text-align: left;
+    color: #181818;
+     box-shadow: 0px 5px 13px 0px #FFFFFF66;
+}
+
+
+.icon-text-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.icon {
+
+    margin-bottom: 10px;
+
+    opacity: 0px;
+    color: #5CC1DA;
+}
+
+.Text {
+    left: 32px;
+    gap: 0px;
+    opacity: 0px;
+    font-family: 'Inter';
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16.94px;
+    text-align: left;
+    color: rgba(118, 118, 129, 1);
+
+
+}
+
