@@ -16,7 +16,6 @@ import { ProfileComponent } from './page/user/profile/profile.component';
 import { NotificationsComponent } from './page/user/notifications/notifications.component';
 import { FiltersComponent } from './page/home/filters/filters.component';
 import { CardsComponent } from './page/home/cards/cards.component';
-import { UpperHotelComponent } from './page/selectedplace/upper-hotel/upper-hotel.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { PaymentComponent } from './page/reservation/payment/payment.component';
@@ -25,7 +24,6 @@ import { TourguideComponent } from './page/freelancepages/tourguide/tourguide.co
 import { CoastalplacesComponent } from './page/home/coastalplaces/coastalplaces.component';
 import { AuthlayoutComponent } from './authlayout/authlayout.component';
 import { BlanklayoutComponent } from './blanklayout/blanklayout.component';
-import { HotelsCardsComponent } from './page/selectedplace/hotels-cards/hotels-cards.component';
 import { SelectedplaceComponent } from './page/selectedplace/selectedplace.component';
 import { CommonModule } from '@angular/common';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -35,6 +33,9 @@ import { EndStepComponent } from './page/reservation/end-step/end-step.component
 import { ReservationComponent } from './page/reservation/reservation.component';
 import { BookingComponent } from './page/user/booking/booking.component';
 import { LogoutComponent } from './page/user/logout/logout.component';
+import { CoastalSearchPipePipe } from './pipes/coastal-search-pipe.pipe';
+import { TouristicSearchPipePipe } from './pipes/touristic-search-pipe.pipe';
+
 
 
 
@@ -56,16 +57,13 @@ import { LogoutComponent } from './page/user/logout/logout.component';
     NotificationsComponent,
     FiltersComponent,
     CardsComponent,
-    UpperHotelComponent,
   ReservationComponent,
-    HotelsCardsComponent,
     PaymentComponent,
    ToursticplacesComponent,
    CoastalplacesComponent,
    TourguideComponent,
    BlanklayoutComponent,
    AuthlayoutComponent,
-   HotelsCardsComponent,
   SelectedplaceComponent,
     SearchPipe,
     ToursticplacesComponent,
@@ -73,13 +71,12 @@ import { LogoutComponent } from './page/user/logout/logout.component';
     TourguideComponent,
     BlanklayoutComponent,
     AuthlayoutComponent,
-    HotelsCardsComponent,
     SelectedplaceComponent,
     EndStepComponent,
     BookingComponent,
-    LogoutComponent
-
-
+    LogoutComponent,
+    CoastalSearchPipePipe,
+    TouristicSearchPipePipe,
   ],
   imports: [
     BrowserModule,

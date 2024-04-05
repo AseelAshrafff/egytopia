@@ -9,3 +9,47 @@
     color: #C89666;
     height: 40px;
     }
+    .cardcontainer {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        min-width:300px;
+    }
+    .card {
+        margin-left: 30px;
+        margin-right: 40px;
+        margin-top: 100px;
+        margin-bottom: 20px;
+        width: 350px;
+       height: 500px;
+        border-radius: 24px;
+        border: 1px solid #EFEFEF;
+        box-shadow: 10px 10px 10px 10px #A9CEF438;
+    }
+    .card img {
+        border-radius: 16px;
+        width: 330px;
+        height: 200px;
+        margin-top: 10px;
+        margin-left: 8px;
+    }
+    .card h5 {
+        width: 350px;
+        font-weight: 600;
+        font-family: "Montserrat", sans-serif;
+        color: #363636;
+    }
+    
+    .card p {
+        width: 300px;
+        height: 180px;
+        font-family: "Montserrat", sans-serif;
+        color: #767681;
+    }
+    
+    .card .arrow {
+        width: 200px;
+        height: 25px;
+        position: relative;
+        left: 100px;
+    }

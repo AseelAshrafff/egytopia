@@ -14,6 +14,8 @@ export class HoteldetailsComponent implements OnInit {
 constructor(private _activatedRoute: ActivatedRoute, private _hotelservice:HotelsService){}
 
 hotelDetails:Ihotel={} as Ihotel;
+rating: number = 2;
+stars: number[] = [1, 2, 3, 4, 5];
 
 ngOnInit(): void {
 

@@ -1,16 +1,18 @@
  <app-filters></app-filters>
  <div class="search">
-  <input type="" id="searchField" placeholder="search here..."   
+  <input type="" id="searchField" placeholder="search here..." 
+  [(ngModel)]="term"  
   />
-<div class="cardcontainer">
-    <div class="card " style="width: 18rem;" *ngFor="let item of touristicplaces">
+  <div class="cardcontainer">
+    <div class="card "  *ngFor="let item of touristicplaces | touristicSearchPipe:term">
       <img src="/assets/images/card1.png" class="card-img-top" alt="...">
       <div class="card-body">
-        <h5 class="card-title">Unveiling the Ancient Wonders of Egypt</h5>
-        <p class="card-text">Li Europan lingues es membres del sam  lor separat existentie es un myth...</p>
-        <a routerLink="/selectedplace">
+        <h5 class="card-title"></h5>
+        <p class="card-text">{{item.description}}</p>
+        <a [routerLink]="['/selectedplace', item.id]">
           <img class="arrow" src="/assets/images/cont.png" alt="" srcset="">
         </a>
       </div>
     </div>
+  </div>
 

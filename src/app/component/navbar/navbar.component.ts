@@ -13,6 +13,7 @@ export class NavbarComponent {
  }
  SearchTerm:string='';
  hotels:Ihotel[]=[];
+ userName:string ='Aseel Ashraf';
 
 //  ngOnInit(): void {
 //   this._hotelservice.GetHotel(1).subscribe(
