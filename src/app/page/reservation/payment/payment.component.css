@@ -105,10 +105,10 @@ height: 70px;
 .card-container {
   
     position: absolute;
-    left: 1150px;
+    left: 1200px;
     top: 130px;
     margin-right: 20px;
-    width: 349px;
+    width: 350px;
     height: 550px;
     gap: 0px;
     border-radius: 16px;
@@ -312,4 +312,54 @@ color: rgba(55, 56, 56, 1);
 }
 #Total-p{
   margin-top: 20px;
+}
+/* For small devices (phones) */
+@media only screen and (max-width: 600px) {
+  .card {
+    width: 100%;
+    margin-top: 50px; 
+    margin-bottom: 20px;
+  }
+  .card-container {
+    position: static;
+    width: 85%;
+    margin: 20px;
+  }
+}
+
+/* For medium devices (tablets) */
+@media only screen and (min-width: 600px) and (max-width: 992px) {
+  .card {
+    width: 100%;
+    margin-top: 100px; 
+    margin-bottom: 40px;
+  }
+  .card-container {
+    position: static;
+    width: 40%;
+    margin: 20px;
+  }
+}
+
+/* For large devices (desktops) */
+@media only screen and (min-width: 992px) {
+  .card {
+    width: 810px;
+    margin-top: 150px; 
+    margin-bottom: 50px;
+  }
+  .card-container {
+    position: absolute;
+    left: 1200px;
+    top: 130px;
+    margin-right: 20px;
+    width: 320px;
+    height: 550px;
+    gap: 0px;
+    border-radius: 16px;
+    opacity: 0px;
+    background: rgba(255, 255, 255, 1);
+    box-shadow: 4px 15px 64px 0px rgba(169, 206, 244, 0.12);
+    justify-content: space-between;
+  }
 }

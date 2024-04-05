@@ -55,6 +55,7 @@
   box-shadow: var(--ezy-form-card-shadow);
   border: none;
   border-radius: 10px;
+  height: 100%;
 }
 
 .ezy__signup14 .form-control,
@@ -101,10 +102,19 @@
   display: inline-block;
   width: 15px; 
   height: 28px; 
-  background-image: url('/assets/images/Vector (1).png'); /* Replace 'path/to/your/image.jpg' with the path to your image */
+  background-image: url('/assets/images/Vector (1).png'); 
   background-size: cover;
   background-position: top;
   
 }
 
+.ezy__signup14-image {
+  height: 100%; /* Make the image container take full height */
+  
+}
 
+.ezy__signup14 img {
+  max-height: 100%; /* Make the image take full height of its container */
+  width: auto; /* Ensures the width adjusts proportionally */
+  object-fit:cover; /* Maintains aspect ratio and covers the container */
+}
