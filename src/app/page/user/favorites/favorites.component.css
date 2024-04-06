@@ -40,8 +40,13 @@
   left: 190px;
 }
 .loc-bd img{
-  width: 1.2%;
-  margin-bottom: 1%;
+  width: 1%;
+  margin-bottom: 0.5%;
+}
+.ph h6{
+  position: relative;
+  left: 210px;
+  top: 11px;
 }
 .But-Fav :hover{
   background-color: #57ACC1;
@@ -49,7 +54,7 @@
 }
 .p{
   position: absolute;
-  top:410px;
+  top:415px;
   left: 180px;
   background-color: #fff;
   color:black;
@@ -63,7 +68,7 @@
 }
 .b{
   position: absolute;
-  top:460px;
+  top:465px;
   left: 180px;
   background-color: #fff;
   color: black;
@@ -77,7 +82,21 @@
 }
 .f{
   position: absolute;
-  top:510px;
+  top:515px;
+  left: 180px;
+  background-color: #fff;
+  color: black;
+  width: 240px;
+  height: 48px;
+  padding: 12px 80px 12px 16px;
+  gap: 0px;
+  border-radius: 8px ;
+  opacity: 0px;
+  border: none;
+}
+.ex{
+  position: absolute;
+  top:565px;
   left: 180px;
   background-color: #fff;
   color: black;
@@ -91,7 +110,7 @@
 }
 .L{
   position: absolute;
-  top:560px;
+  top:615px;
   left: 180px;
   background-color: #fff;
   color: black;

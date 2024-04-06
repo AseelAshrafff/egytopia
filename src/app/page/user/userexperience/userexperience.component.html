@@ -14,14 +14,21 @@
       <div class="rect"></div>
       <!-- Personal Info -->
       <div class="title1">
-        <h3>Log Out</h3>
+        <h3>Share Experience</h3>
       </div>
-      <div class="confirm">
-        <h4>Are you sure you want to log out ?</h4>
+      <div class="data">
+         <div class="w-50 ">
+        <label for="uprofile">Upload Your Profile Picture :</label>
+        <input type="file" id="uprofile" name="uprofile" multiple accept="image/*" />
+        </div> <br>
+        <div class="w-50 ">
+          <label for="ucomment">Comment :</label>
+        <textarea  style="resize: none" id="ucomment" name="userComment" rows="5" cols="55" ></textarea>
+        </div>
+        <button class="exper" [routerLink]="['/experience']">People's Experience</button>
+        <button class="adding">Add Experience</button>
       </div>
-      <div class="Yes">
-     <button class="y"  [routerLink]="['/login']"> Yes </button>
-     </div>
+
       <div class="But-Fav">
         <button class="p" [routerLink]="['/profile']">Personal Info</button>
         <button class="b" [routerLink]="['/booking']">Booking History</button>
@@ -31,7 +38,7 @@
       </div>
     </div>
   </div>
-   <div class="col-12 col-lg-5 d-none d-lg-block">
+  <div class="col-12 col-lg-5 d-none d-lg-block">
     <div class="d-flex align-items-center h-100">
     </div>
   </div>

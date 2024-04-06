@@ -39,6 +39,10 @@ import { MatStepperModule } from '@angular/material/stepper';
 import { CoastalSearchPipePipe } from './pipes/coastal-search-pipe.pipe';
 import { TouristicSearchPipePipe } from './pipes/touristic-search-pipe.pipe';
 import { MatIconModule } from '@angular/material/icon';
+import { TourguideprofileComponent } from './page/user/tourguideprofile/tourguideprofile.component';
+import { LogoutguideComponent } from './page/user/logoutguide/logoutguide.component';
+import { BookingguideComponent } from './page/user/bookingguide/bookingguide.component';
+import { UserexperienceComponent } from './page/user/userexperience/userexperience.component';
 
 
 @NgModule({
@@ -79,7 +83,11 @@ import { MatIconModule } from '@angular/material/icon';
     StepperComponent,
     CoastalSearchPipePipe,
     TouristicSearchPipePipe,
-  
+    TourguideprofileComponent,
+    LogoutguideComponent,
+    BookingguideComponent,
+    UserexperienceComponent,
+
   ],
   imports: [
     BrowserModule,
@@ -89,7 +97,7 @@ import { MatIconModule } from '@angular/material/icon';
     ReactiveFormsModule,
     MatStepperModule,
     MatIconModule,
-    
+
 
   ],
   providers: [

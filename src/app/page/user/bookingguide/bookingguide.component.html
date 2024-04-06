@@ -1,0 +1,30 @@
+<section class="ezy__profile d-flex align-items-center justify-content-center">
+  <div class="total">
+    <!--Image-->
+    <div class="ImgProf">
+      <div class="pic"><img src="assets/images/tourguidephoto1.jpeg" /></div>
+      <h4>{{guideName}}</h4>
+      <div class="loc-bd">
+        <h6><img  class="loc" src="./assets/images/loca.jpeg" /> {{guidelocation}} | <img src="assets/images/cake.jpeg" /> {{guideDB}}</h6>
+     </div>
+      <div class="ph">
+        <h6 class="ph">{{guidephone}}</h6>
+     </div>
+      <!-- Rectangle -->
+      <div class="rect"></div>
+      <!-- Personal Info -->
+      <div class="title1">
+        <h3>Tourist Booking Handler</h3>
+      </div>
+      <div class="But-Fav">
+        <button class="p" [routerLink]="['/tourguideprofile']">Personal Info</button>
+        <button class="b" [routerLink]="['/bookingguide']">Tourist Booking Handler</button>
+        <button class="L" [routerLink]="['/logoutguide']">Log Out</button>
+      </div>
+    </div>
+  </div>
+   <div class="col-12 col-lg-5 d-none d-lg-block">
+    <div class="d-flex align-items-center h-100">
+    </div>
+  </div>
+</section>

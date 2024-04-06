@@ -25,6 +25,10 @@ import { EndStepComponent } from './page/reservation/end-step/end-step.component
 import { LogoutComponent } from './page/user/logout/logout.component';
 import { BookingComponent } from './page/user/booking/booking.component';
 import { StepperComponent } from './stepper/stepper.component';
+import { BookingguideComponent } from './page/user/bookingguide/bookingguide.component';
+import { LogoutguideComponent } from './page/user/logoutguide/logoutguide.component';
+import { TourguideprofileComponent } from './page/user/tourguideprofile/tourguideprofile.component';
+import { UserexperienceComponent } from './page/user/userexperience/userexperience.component';
 
 
 
@@ -50,10 +54,14 @@ const routes: Routes = [
     {path:'tourguide', canActivate:[authGuard] ,component:TourguideComponent},
     {path:'hoteldetails/:id', canActivate:[authGuard] ,component:HoteldetailsComponent},
     {path:'favorite', canActivate:[authGuard] ,component:FavoritesComponent},
-    {path:'profile' , canActivate:[authGuard] ,component:ProfileComponent},
-    {path:'logout' , canActivate:[authGuard],component:LogoutComponent},
-    {path:'booking' , canActivate:[authGuard],component:BookingComponent},
+    {path:'profile' , canActivate:[authGuard]  ,component:ProfileComponent},
+    {path:'logout', canActivate:[authGuard] ,component:LogoutComponent},
+    {path:'booking', canActivate:[authGuard],component:BookingComponent},
     {path:'experience', canActivate:[authGuard] ,component:ExperienceComponent},
+    {path:'bookingguide', canActivate:[authGuard], component:BookingguideComponent},
+    {path:'logoutguide', canActivate:[authGuard], component:LogoutguideComponent},
+    {path:'tourguideprofile', canActivate:[authGuard], component:TourguideprofileComponent},
+    {path:'userexperience', canActivate:[authGuard], component:UserexperienceComponent},
     {path:'payment', canActivate:[authGuard] ,component:PaymentComponent},
     {path:'endstep', canActivate:[authGuard] ,component:EndStepComponent},
     {path:'stepper',canActivate:[authGuard] ,component:StepperComponent}
