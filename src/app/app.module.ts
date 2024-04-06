@@ -97,6 +97,8 @@ import { UserexperienceComponent } from './page/user/userexperience/userexperien
     ReactiveFormsModule,
     MatStepperModule,
     MatIconModule,
+    BrowserAnimationsModule,
+    ToastrModule.forRoot(),
 
 
   ],

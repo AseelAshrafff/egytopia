@@ -59,21 +59,15 @@
     <p>What is included</p>
     </div>
     <div class="bedrooms">
-       <div class="bed1">
-        <img src="assets/images/bed.png" alt="">
-        <h5>Bedroom5</h5>
-        <p>3 Single beds</p>
-       </div>
-       <div class="bed1">
-        <img src="assets/images/bed.png" alt="">
-        <h5>Bedroom5</h5>
-        <p>3 Single beds</p>
-       </div>
-       <div class="bed1">
-        <img src="assets/images/sweet.png" alt="">
-        <h5>Sweet</h5>
-        <p>3 Single beds</p>
-       </div>
+        @for (item of roomListDetails; track $index) {
+            <div class="bed1" (click)="setSelectedRoom(item)">
+                <img src="assets/images/bed.png" alt="">
+                <h5>{{item.roomType}}</h5>
+                <p>{{item.description}}</p>
+               </div>
+        }      
+       
+       
     </div>
 <!----------------------------------------------- safety -------------------------------------------------------> 
    <div class="safety">
@@ -149,15 +143,16 @@
         <div class="card-body">
           <h5 class="card-title">Booking</h5>
           <hr/>
-          <form action="">
+          <form [formGroup]="bookingRoomForm"  action="">
            <label for="">From</label> <br/>
-           <input class="date" type="date">
+           <input formControlName="from" name="from" class="date" type="date">
            <label for="">To</label> <br/>
-           <input class="date" type="date">
+           <input formControlName="to" name="to" class="date" type="date">
+           <p>{{selctedRoom?.roomType??''}}</p>
           </form>
           <h3>$78.90</h3>
           <div class="booking">
-            <button type="button" class="btn">Confirm Booking</button>
+            <button type="button" (click)="BookSubmit()" class="btn">Confirm Booking</button>
           </div>
           <div class="fav">
             <button type="button" class="btn">

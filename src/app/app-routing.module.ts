@@ -19,7 +19,6 @@ import { CoastalplacesComponent } from './page/home/coastalplaces/coastalplaces.
 import { ToursticplacesComponent } from './page/home/toursticplaces/toursticplaces.component';
 import { BlanklayoutComponent } from './blanklayout/blanklayout.component';
 import { authGuard } from './guards/auth.guard';
-
 import { SelectedplaceComponent } from './page/selectedplace/selectedplace.component';
 import { EndStepComponent } from './page/reservation/end-step/end-step.component';
 import { LogoutComponent } from './page/user/logout/logout.component';
@@ -64,8 +63,8 @@ const routes: Routes = [
     {path:'userexperience', canActivate:[authGuard], component:UserexperienceComponent},
     {path:'payment', canActivate:[authGuard] ,component:PaymentComponent},
     {path:'endstep', canActivate:[authGuard] ,component:EndStepComponent},
-    {path:'stepper',canActivate:[authGuard] ,component:StepperComponent}
-
+    {path:'stepper',canActivate:[authGuard] ,component:StepperComponent},
+    {path:'reservation', canActivate:[authGuard] ,component: ReservationComponent }  
   ]},
   //----------------------------- auth layout ---------------------------------------------
   {path:'', component:AuthlayoutComponent,children:[
@@ -77,7 +76,7 @@ const routes: Routes = [
   {path:'**', component:NotfoundComponent},
   {path:'selectedplace/:id', canActivate:[authGuard] ,component:SelectedplaceComponent},
   {path:'payment', canActivate:[authGuard] ,component: PaymentComponent},
- {path:'reservation', canActivate:[authGuard] ,component: ReservationComponent },
+  
 
 
   {path:'**', component:NotfoundComponent}
